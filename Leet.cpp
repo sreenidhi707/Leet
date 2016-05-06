@@ -814,6 +814,64 @@ public:
 
 	/****************************************************************/
 	/****************************************************************/
+	vector< vector<int> > return_dummy()
+	{
+		vector< vector<int> > temp1;
+		vector<int> temp;
+		temp1.insert(temp1.begin(), temp.begin(), temp.end());
+		return(temp1);
+	}
+	
+	vector< vector<int> > return_current()
+	{
+		vector< vector<int> > temp1;
+		vector<int> temp;
+		temp1.insert(temp1.begin(), temp.begin(), temp.end());
+		return(temp1);
+	}
+
+	//bool dfs_problem_39(vector<int>& candidates, int target, vector< vector<int> > combinations, int current)
+	//{
+	//	vector< vector<int> > local_combinations;
+	//	//bool all_combinations_exceed_target = true;
+	//	for (size_t i = 0; i < candidates.size(); i++)
+	//	{
+	//		vector< vector<int> > temp;
+	//		if (candidates.at(i) + current < target)
+	//		{
+	//			if (dfs_problem_39(candidates, target, local_combinations, candidates.at(i) + current))
+	//			{
+	//				//combinations.insert(local_combinations.begin(), temp.begin(), temp.end());
+	//				vector<int> temp;
+	//				temp.push_back(candidates.at(i));
+	//				combinations.push_back(temp);
+	//			}
+	//			
+	//		}
+	//		else if(candidates.at(i) + current == target)
+	//		{
+	//			vector<int> temp;
+	//			temp.push_back(candidates.at(i));
+	//			combinations.push_back(temp);
+	//			return (true);
+	//		}
+	//		else
+	//		{
+	//			return (false);
+	//		}
+	//	}
+
+	//	return(local_combinations);
+	//}
+	
+	//vector< vector<int> > problem_39(vector<int>& candidates, int target)
+	//{
+	//	//vector< vector<int> > all_combinations = dfs_problem_39(candidates, 0, target);
+	//	return(all_combinations);
+	//}
+
+	/****************************************************************/
+	/****************************************************************/
 
 	bool check_bst(TreeNode* pNode, int minVal, int maxVal)
 	{
@@ -851,6 +909,74 @@ public:
 	{
 		bool isBst = check_bst(pRoot, INT_MIN, INT_MAX);
 		return(isBst);		
+	}
+
+	/****************************************************************/
+	/****************************************************************/
+
+	void push_if_not_null(queue<TreeNode*>& queue, TreeNode* node)
+	{
+		if (node != NULL)
+		{
+			queue.push(node->left);
+		}
+
+		if (node != NULL)
+		{
+			queue.push(node->right);
+		}
+	}
+
+	bool problem_100(TreeNode* p, TreeNode* q)
+	{
+		if (p == NULL && q == NULL)
+		{
+			return true;
+		}
+
+		if (p == NULL || q == NULL)
+		{
+			return false;
+		}
+
+		queue<TreeNode*> queue_p;
+		queue<TreeNode*> queue_q;
+
+		queue_p.push(p);
+		queue_q.push(q);
+
+		while (queue_p.size() > 0 && queue_q.size() > 0)
+		{
+			TreeNode* p = queue_p.front();
+			TreeNode* q = queue_q.front();
+
+			queue_p.pop();
+			queue_q.pop();
+
+			if (p == NULL && q == NULL)
+			{
+				continue;
+			}
+			else if(p == NULL || q == NULL)
+			{
+				return false;
+			}
+
+			if (p->val != q->val)
+			{
+				return false;
+			}
+			else
+			{
+				push_if_not_null(queue_p, p);
+				push_if_not_null(queue_q, q);
+			}
+		}
+
+		if (queue_p.size() > 0 || queue_q.size() > 0)
+		{
+			return false;
+		}
 	}
 
 	/****************************************************************/
@@ -1230,6 +1356,21 @@ int main()
 		cout << "Link: https://leetcode.com/problems/validate-binary-search-tree/" << endl;
 		break;
 	}
+	case 39:
+	{
+		cout << endl << endl;
+		cout << "Leet code Problem 39: Combination Sum" << endl;
+
+		vector<int> candidates;
+		candidates.push_back(2);
+		candidates.push_back(3);
+		candidates.push_back(6);
+		candidates.push_back(7);
+
+		//vector < vector<int> > all_combinations = sol.problem_39(candidates, 7);
+
+		break;
+	}
 	case 98:
 	{
 		cout << endl << endl;
@@ -1255,6 +1396,25 @@ int main()
 			cout << "The Given binary is a NOT a Valid Binary Search Tree" << endl;
 		}
 		break;
+	}
+	case 100:
+	{
+		cout << endl << endl;
+		cout << "Leet code Problem 100: Same Tree " << endl;
+		cout << "Given two binary trees, write a function to check if they are equal or not." << endl;
+		cout << "Two binary trees are considered equal if they are structurally identical and the nodes have the same value." << endl;
+
+		cout << "Link: https://leetcode.com/problems/same-tree/" << endl;
+
+		TreeNode t1n0(10); TreeNode t1n1(5); TreeNode t1n2(15);
+		t1n0.left = &t1n1;
+		t1n0.right = &t1n2;
+
+		TreeNode t2n0(10); TreeNode t2n1(5); TreeNode t2n2(15);
+		t2n0.left = &t2n1;
+		t2n1.right = &t2n2;
+
+		bool isSame = sol.problem_100(&t1n0, &t2n0);
 	}
 	case 215:
 	{
