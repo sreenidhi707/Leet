@@ -1,0 +1,6 @@
+﻿  Leet.cpp
+c:\users\sanand2\dropbox\myprojects\leetcode\leet\linkedlist.h(81): warning C4018: '<': signed/unsigned mismatch
+c:\users\sanand2\dropbox\myprojects\leetcode\leet\leet.cpp(99): warning C4018: '<=': signed/unsigned mismatch
+c:\users\sanand2\dropbox\myprojects\leetcode\leet\leet.cpp(112): warning C4018: '<': signed/unsigned mismatch
+c:\users\sanand2\dropbox\myprojects\leetcode\leet\leet.cpp(463): warning C4018: '<=': signed/unsigned mismatch
+  Leet.vcxproj -> C:\Users\sanand2\Dropbox\MyProjects\LeetCode\Leet\Debug\Leet.exe

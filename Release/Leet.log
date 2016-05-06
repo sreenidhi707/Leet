@@ -1,0 +1,7 @@
+﻿  stdafx.cpp
+  Leet.cpp
+c:\users\sanand2\dropbox\myprojects\leetcode\leet\LinkedList.h(81): warning C4018: '<': signed/unsigned mismatch
+  Generating code
+  All 635 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  Leet.vcxproj -> C:\Users\sanand2\Dropbox\MyProjects\LeetCode\Leet\Release\Leet.exe
