@@ -869,6 +869,41 @@ public:
 	//	//vector< vector<int> > all_combinations = dfs_problem_39(candidates, 0, target);
 	//	return(all_combinations);
 	//}
+	
+	/****************************************************************/
+	/****************************************************************/
+	int dfs_problem_70(int target, unordered_map<int, int>& cache)
+	{
+		//See if target has already been computed
+		if (cache.find(target) != cache.end())
+		{
+			return cache[target];
+		}
+
+		if (target == 0)
+		{
+			return (1);
+		}
+		else if (target < 0)
+		{
+			return (0);
+		}
+
+		int local_count_0 = dfs_problem_70(target - 1, cache);
+		int local_count_1 = dfs_problem_70(target - 2, cache);
+
+		cache[target] = local_count_0 + local_count_1;
+		return(local_count_0 + local_count_1);
+	}
+	
+	int problem_70(int n)
+	{
+		int count = 0;
+		unordered_map<int, int> cache_table;
+
+		count = dfs_problem_70(n, cache_table);
+		return(count);
+	}
 
 	/****************************************************************/
 	/****************************************************************/
@@ -1370,6 +1405,17 @@ int main()
 		//vector < vector<int> > all_combinations = sol.problem_39(candidates, 7);
 
 		break;
+	}
+	case 70:
+	{
+		cout << endl << endl;
+		cout << "Leet code Problem 70: Climbing Stairs " << endl;
+		cout << "You are climbing a stair case. It takes n steps to reach to the top." << endl;
+		cout << "Each time you can either climb 1 or 2 steps. In how many distinct ways can you climb to the top ?" << endl;
+
+		cout << "Link: https://leetcode.com/problems/climbing-stairs/" << endl;
+
+		int count = sol.problem_70(3);
 	}
 	case 98:
 	{
