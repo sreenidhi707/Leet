@@ -9,8 +9,7 @@ c:\users\sanand2\dropbox\myprojects\leet\leet.cpp(671): warning C4018: '<=': sig
 c:\users\sanand2\dropbox\myprojects\leet\leet.cpp(725): warning C4018: '<': signed/unsigned mismatch
 c:\users\sanand2\dropbox\myprojects\leet\leet.cpp(747): warning C4018: '<': signed/unsigned mismatch
 c:\users\sanand2\dropbox\myprojects\leet\leet.cpp(807): warning C4018: '<=': signed/unsigned mismatch
-c:\users\sanand2\dropbox\myprojects\leet\leet.cpp(1072): warning C4018: '<': signed/unsigned mismatch
-c:\users\sanand2\dropbox\myprojects\leet\leet.cpp(1365): warning C4018: '<': signed/unsigned mismatch
+c:\users\sanand2\dropbox\myprojects\leet\leet.cpp(1110): warning C4018: '<': signed/unsigned mismatch
+c:\users\sanand2\dropbox\myprojects\leet\leet.cpp(1403): warning C4018: '<': signed/unsigned mismatch
 c:\users\sanand2\dropbox\myprojects\leet\leet.cpp(1015): warning C4715: 'Solution::problem_100': not all control paths return a value
-cl : Command line warning D9028: minimal rebuild failure, reverting to normal build
   Leet.vcxproj -> C:\Users\sanand2\Dropbox\MyProjects\Leet\Debug\Leet.exe

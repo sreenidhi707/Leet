@@ -1017,6 +1017,44 @@ public:
 	/****************************************************************/
 	/****************************************************************/
 
+	int get_height(TreeNode* node)
+	{
+		if (node == NULL)
+		{
+			return (-1);
+		}
+
+		int left_height = get_height(node->left);
+		if (left_height == -2)
+		{
+			return (-2);
+		}
+
+		int right_height = get_height(node->right);
+		if (right_height == -2)
+		{
+			return (-2);
+		}
+
+		if (abs(left_height - right_height) > 1)
+		{
+			return (-2);
+		}
+		else
+		{
+			return(max(left_height, right_height) + 1);
+		}
+	}
+	bool problem_110(TreeNode* root)
+	{
+		int height = get_height(root);
+		bool is_balanced = (height == -2) ? false : true;
+		return(is_balanced);
+	}
+
+	/****************************************************************/
+	/****************************************************************/
+
 	int problem_215(vector<int>& nums, int k)
 	{
 		std::sort(nums.begin(), nums.end());
@@ -1461,6 +1499,24 @@ int main()
 		t2n1.right = &t2n2;
 
 		bool isSame = sol.problem_100(&t1n0, &t2n0);
+		break;
+	}
+	case 110:
+	{
+		cout << endl << endl;
+		cout << "Leet code Problem 110: Balanced Binary Tree " << endl;
+		cout << "Given a binary tree, determine if it is height-balanced." << endl;
+		cout << "For this problem, a height-balanced binary tree is defined as a binary tree in which the depth of the two subtrees of every node never differ by more than 1." << endl;
+
+		cout << "Link: https://leetcode.com/problems/same-tree/" << endl;
+		
+		TreeNode n0(2); TreeNode n1(3); TreeNode n2(4); TreeNode n3(5); TreeNode n4(6);
+
+		n0.right = &n1; n1.right = &n2; n2.right = &n3; n3.right = &n4;
+
+		bool is_balanced = sol.problem_110(&n0);
+
+		break;
 	}
 	case 215:
 	{
