@@ -1075,6 +1075,53 @@ public:
 	/****************************************************************/
 	/****************************************************************/
 
+	int get_min_depth_problem_111(TreeNode* node)
+	{
+		if (node == NULL)
+		{
+			return(0);
+		}
+
+		int min_left = get_min_depth_problem_111(node->left);
+		int min_right = get_min_depth_problem_111(node->right);
+
+		int min_depth = 0;
+		if (min_left == 0 || min_right == 0)
+		{
+			if (min_left == 0)
+			{
+				min_depth = min_right;
+			}
+
+			if (min_right == 0)
+			{
+				min_depth = min_left;
+			}
+			
+			if (min_depth == 0)
+			{
+				min_depth = 1;
+			}
+			else 
+			{
+				min_depth++;
+			}
+		}
+		else
+		{
+			min_depth = min(min_left, min_right) + 1;
+		}
+		return(min_depth);
+	}
+
+	int problem_111(TreeNode* root)
+	{
+		int get_min_depth_problem_111(TreeNode* node);
+	}
+
+	/****************************************************************/
+	/****************************************************************/
+
 	int problem_215(vector<int>& nums, int k)
 	{
 		std::sort(nums.begin(), nums.end());

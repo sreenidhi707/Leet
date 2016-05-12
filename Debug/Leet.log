@@ -10,7 +10,7 @@ c:\users\sanand2\dropbox\myprojects\leet\leet.cpp(671): warning C4018: '<=': sig
 c:\users\sanand2\dropbox\myprojects\leet\leet.cpp(725): warning C4018: '<': signed/unsigned mismatch
 c:\users\sanand2\dropbox\myprojects\leet\leet.cpp(747): warning C4018: '<': signed/unsigned mismatch
 c:\users\sanand2\dropbox\myprojects\leet\leet.cpp(807): warning C4018: '<=': signed/unsigned mismatch
-c:\users\sanand2\dropbox\myprojects\leet\leet.cpp(1130): warning C4018: '<': signed/unsigned mismatch
-c:\users\sanand2\dropbox\myprojects\leet\leet.cpp(1423): warning C4018: '<': signed/unsigned mismatch
+c:\users\sanand2\dropbox\myprojects\leet\leet.cpp(1177): warning C4018: '<': signed/unsigned mismatch
+c:\users\sanand2\dropbox\myprojects\leet\leet.cpp(1470): warning C4018: '<': signed/unsigned mismatch
 c:\users\sanand2\dropbox\myprojects\leet\leet.cpp(1015): warning C4715: 'Solution::problem_100': not all control paths return a value
   Leet.vcxproj -> C:\Users\sanand2\Dropbox\MyProjects\Leet\Debug\Leet.exe
