@@ -1016,6 +1016,26 @@ public:
 
 	/****************************************************************/
 	/****************************************************************/
+	int get_max_depth_problem_104(TreeNode* node)
+	{
+		if (node == NULL)
+		{
+			return(0);
+		}
+
+		int max_left = get_max_depth_problem_104(node->left);
+		int max_right = get_max_depth_problem_104(node->right);
+
+		return(max(max_left, max_right) + 1);
+	}
+
+	int problem_104(TreeNode* root)
+	{
+		int get_max_depth_problem_104(TreeNode* node);
+	}
+	
+	/****************************************************************/
+	/****************************************************************/
 
 	int get_height(TreeNode* node)
 	{
