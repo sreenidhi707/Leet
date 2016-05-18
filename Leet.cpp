@@ -1121,6 +1121,47 @@ public:
 
 	/****************************************************************/
 	/****************************************************************/
+	bool isLeaf(TreeNode* node)
+	{
+		return(node->left == NULL && node->right == NULL);
+	}
+
+	bool walker_problem_112(TreeNode* node, int target_sum, int current_sum)
+	{
+		if (node == NULL)
+		{
+			return false;
+		}
+
+		//Leaf node
+		if (isLeaf(node))
+		{
+			if (current_sum + node->val == target_sum)
+			{
+				return true;
+			}
+			else
+			{
+				return false;
+			}
+		}
+
+		//Not leaf node
+		bool leftHasPathSum = walker_problem_112(node->left, target_sum, current_sum + node->val);
+		bool rightHasPathSum = walker_problem_112(node->right, target_sum, current_sum + node->val);
+
+		return(leftHasPathSum || rightHasPathSum);
+		
+	}
+
+	bool problem_112(TreeNode* root, int sum)
+	{
+		bool hasPathSum = walker_problem_112(root, sum, 0);
+		return(hasPathSum);
+	}
+
+	/****************************************************************/
+	/****************************************************************/
 
 	int problem_215(vector<int>& nums, int k)
 	{
