@@ -1173,6 +1173,43 @@ public:
 	/****************************************************************/
 	/****************************************************************/
 
+	void node_walker_problem_257(TreeNode* node, string partial_path, vector<string>& list_of_paths)
+	{
+		//node is NULL
+		if (node == NULL)
+		{
+			return;
+		}
+
+		//node is not NULL
+		if (node->left == NULL && node->right == NULL)
+		{
+			string temp = partial_path + "->" + to_string(node->val);
+			list_of_paths.push_back(temp);
+			return;
+		}
+
+		node_walker_problem_257(node->left, partial_path + "->" + to_string(node->val), list_of_paths);
+		node_walker_problem_257(node->right, partial_path + "->" + to_string(node->val), list_of_paths);
+		return;
+	}
+
+	vector<string> problem_257(TreeNode* root)
+	{
+		vector<string> list_of_paths;
+
+		node_walker_problem_257(root, "", list_of_paths);
+
+		for (int i = 0; i<list_of_paths.size(); i++)
+		{
+			list_of_paths.at(i).erase(0, 2);
+		}
+		return(list_of_paths);
+	}
+
+	/****************************************************************/
+	/****************************************************************/
+
 	void problem_283(vector<int>& nums)
 	{
 		bool zero_encountered = false;

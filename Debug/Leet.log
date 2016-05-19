@@ -1,4 +1,17 @@
 ﻿  stdafx.cpp
-cl : Command line warning D9028: minimal rebuild failure, reverting to normal build
   Leet.cpp
-c:\users\sanand2\dropbox\myprojects\leet\leet.cpp(4): fatal error C1041: cannot open program database 'C:\Users\sanand2\Dropbox\MyProjects\Leet\Debug\vc140.idb'; if multiple CL.EXE write to the same .PDB file, please use /FS
+c:\users\sanand2\dropbox\myprojects\leet\linkedlist.h(81): warning C4018: '<': signed/unsigned mismatch
+c:\users\sanand2\dropbox\myprojects\leet\leet.cpp(103): warning C4018: '<=': signed/unsigned mismatch
+c:\users\sanand2\dropbox\myprojects\leet\leet.cpp(116): warning C4018: '<': signed/unsigned mismatch
+c:\users\sanand2\dropbox\myprojects\leet\leet.cpp(248): warning C4018: '>=': signed/unsigned mismatch
+c:\users\sanand2\dropbox\myprojects\leet\leet.cpp(416): warning C4018: '<': signed/unsigned mismatch
+c:\users\sanand2\dropbox\myprojects\leet\leet.cpp(664): warning C4018: '<=': signed/unsigned mismatch
+c:\users\sanand2\dropbox\myprojects\leet\leet.cpp(671): warning C4018: '<=': signed/unsigned mismatch
+c:\users\sanand2\dropbox\myprojects\leet\leet.cpp(725): warning C4018: '<': signed/unsigned mismatch
+c:\users\sanand2\dropbox\myprojects\leet\leet.cpp(747): warning C4018: '<': signed/unsigned mismatch
+c:\users\sanand2\dropbox\myprojects\leet\leet.cpp(807): warning C4018: '<=': signed/unsigned mismatch
+c:\users\sanand2\dropbox\myprojects\leet\leet.cpp(1203): warning C4018: '<': signed/unsigned mismatch
+c:\users\sanand2\dropbox\myprojects\leet\leet.cpp(1255): warning C4018: '<': signed/unsigned mismatch
+c:\users\sanand2\dropbox\myprojects\leet\leet.cpp(1548): warning C4018: '<': signed/unsigned mismatch
+c:\users\sanand2\dropbox\myprojects\leet\leet.cpp(1015): warning C4715: 'Solution::problem_100': not all control paths return a value
+  Leet.vcxproj -> C:\Users\sanand2\Dropbox\MyProjects\Leet\Debug\Leet.exe
