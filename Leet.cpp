@@ -1303,6 +1303,40 @@ public:
 
 	/****************************************************************/
 	/****************************************************************/
+
+	vector<int> problem_340(vector<int>& nums1, vector<int>& nums2)
+	{
+		map<int, int> nums1_map;
+		map<int, int> nums2_map;
+		vector<int> intersection;
+
+		if (nums1.size() == 0 || nums2.size() == 0)
+		{
+			return intersection;
+		}
+
+		for (size_t i = 0; i < nums1.size(); i++)
+		{
+			nums1_map[nums1.at(i)] = 1;
+		}
+
+		for (size_t i = 0; i < nums2.size(); i++)
+		{
+			nums2_map[nums2.at(i)] = 1;
+		}
+
+		
+		for (map<int, int>::iterator it = nums1_map.begin(); it != nums1_map.end(); it++)
+		{
+			int key = it->first;
+			if (nums2_map.count(key) > 0)
+			{
+				intersection.push_back(key);
+			}
+		}
+		return(intersection);
+
+	}
 };
 
 int main()
