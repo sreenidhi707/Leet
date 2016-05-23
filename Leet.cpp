@@ -12,6 +12,8 @@
 #include <limits.h>
 #include <map>
 #include <unordered_map>
+#include <cctype>
+
 
 #include "LinkedList.h"
 
@@ -814,6 +816,42 @@ public:
 
 	/****************************************************************/
 	/****************************************************************/
+
+	int problem_58(string s)
+	{
+		int char_count = 0;
+		if (s.length() == 0)
+		{
+			return char_count;
+		}
+
+		bool alphabet_started = false;
+		int word_length = 0;
+		for (int i = s.length() - 1; i >= 0; i--)
+		{
+			if (isspace(s[i]))
+			{
+				if (alphabet_started)
+				{
+					break;
+				}
+			}
+			else
+			{
+				if (!alphabet_started)
+				{
+					alphabet_started = true;
+				}
+				word_length++;
+			}
+		}
+		return word_length;
+		
+		
+	}
+
+	/****************************************************************/
+	/****************************************************************/
 	vector< vector<int> > return_dummy()
 	{
 		vector< vector<int> > temp1;
@@ -1347,6 +1385,8 @@ int main()
 	cin >> problem_id;
 	Solution sol;
 	
+	cin.clear();
+	cin.sync();
 
 	switch (problem_id)
 	{
@@ -1620,6 +1660,30 @@ int main()
 		candidates.push_back(7);
 
 		//vector < vector<int> > all_combinations = sol.problem_39(candidates, 7);
+
+		break;
+	}
+	case 58:
+	{
+		cout << endl << endl;
+		cout << "Leet code Problem 58: Length of Last Word" << endl;
+		cout << "Given a string s consists of upper/lower-case alphabets and empty space characters ' ', return the length of last word in the string." << endl;
+		cout << "If the last word does not exist, return 0." << endl;
+
+		cout << "Link: https://leetcode.com/problems/length-of-last-word/" << endl;
+
+		//cin.clear();
+		//cin.sync();
+
+		cin.ignore();
+
+		string s;
+		cout << "Enter a string : ";
+		getline(cin, s);
+
+		int length_of_last_word = sol.problem_58(s);
+
+		cout << "Length of the last word is:" << length_of_last_word;
 
 		break;
 	}
