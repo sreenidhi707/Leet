@@ -1,17 +1,1 @@
-﻿  stdafx.cpp
-  Leet.cpp
-c:\users\sanand2\dropbox\myprojects\leet\linkedlist.h(81): warning C4018: '<': signed/unsigned mismatch
-c:\users\sanand2\dropbox\myprojects\leet\leet.cpp(105): warning C4018: '<=': signed/unsigned mismatch
-c:\users\sanand2\dropbox\myprojects\leet\leet.cpp(118): warning C4018: '<': signed/unsigned mismatch
-c:\users\sanand2\dropbox\myprojects\leet\leet.cpp(250): warning C4018: '>=': signed/unsigned mismatch
-c:\users\sanand2\dropbox\myprojects\leet\leet.cpp(418): warning C4018: '<': signed/unsigned mismatch
-c:\users\sanand2\dropbox\myprojects\leet\leet.cpp(666): warning C4018: '<=': signed/unsigned mismatch
-c:\users\sanand2\dropbox\myprojects\leet\leet.cpp(673): warning C4018: '<=': signed/unsigned mismatch
-c:\users\sanand2\dropbox\myprojects\leet\leet.cpp(727): warning C4018: '<': signed/unsigned mismatch
-c:\users\sanand2\dropbox\myprojects\leet\leet.cpp(749): warning C4018: '<': signed/unsigned mismatch
-c:\users\sanand2\dropbox\myprojects\leet\leet.cpp(809): warning C4018: '<=': signed/unsigned mismatch
-c:\users\sanand2\dropbox\myprojects\leet\leet.cpp(1241): warning C4018: '<': signed/unsigned mismatch
-c:\users\sanand2\dropbox\myprojects\leet\leet.cpp(1293): warning C4018: '<': signed/unsigned mismatch
-c:\users\sanand2\dropbox\myprojects\leet\leet.cpp(1622): warning C4018: '<': signed/unsigned mismatch
-c:\users\sanand2\dropbox\myprojects\leet\leet.cpp(1053): warning C4715: 'Solution::problem_100': not all control paths return a value
-  Leet.vcxproj -> C:\Users\sanand2\Dropbox\MyProjects\Leet\Debug\Leet.exe
+﻿

@@ -13,6 +13,7 @@
 #include <map>
 #include <unordered_map>
 #include <cctype>
+#include <iomanip> //setw, setfill
 
 
 #include "LinkedList.h"
@@ -1201,6 +1202,58 @@ public:
 	/****************************************************************/
 	/****************************************************************/
 
+	vector<int> get_next_row(vector<int> current_row)
+	{
+		vector<int> next_row;
+		
+		next_row.push_back(1);
+		for (size_t i = 0; i < current_row.size() - 1; i++)
+		{
+			int elem = current_row.at(i) + current_row.at(i + 1);
+			next_row.push_back(elem);
+		}
+		next_row.push_back(1);
+
+		return next_row;
+	}
+
+	vector< vector<int> > problem_118(int numRows)
+	{
+		vector<int> first_row, second_row;
+		vector< vector<int> > pascal;
+		
+		first_row.push_back(1);
+		second_row.push_back(1);
+		second_row.push_back(1);
+
+		if (numRows < 1)
+		{
+			return pascal;
+		}
+
+		pascal.push_back(first_row);
+		if (numRows == 1)
+		{
+			return pascal;
+		}
+
+		pascal.push_back(second_row);
+		if (numRows == 2)
+		{
+			return pascal;
+		}
+		
+		for (size_t row = 2; row < numRows; row++)
+		{
+			vector<int> new_row = get_next_row(pascal.at(row - 1));
+			pascal.push_back(new_row);
+		}
+		return pascal;
+	}
+
+	/****************************************************************/
+	/****************************************************************/
+
 	int problem_215(vector<int>& nums, int k)
 	{
 		std::sort(nums.begin(), nums.end());
@@ -1759,6 +1812,32 @@ int main()
 
 		bool is_balanced = sol.problem_110(&n0);
 
+		break;
+	}
+	case 118:
+	{
+		cout << endl << endl;
+		cout << "Leet code Problem 118: Pascal's Triangle" << endl;
+		cout << "Given numRows, generate the first numRows of Pascal's triangle." << endl;
+		cout << "Link: https://leetcode.com/problems/pascals-triangle/" << endl;
+
+		int num_rows = 0;
+		cout << "Enter number of rows:";
+		cin >> num_rows;
+
+		vector<vector<int> > pascal = sol.problem_118(num_rows);
+
+		cout << "Pascal's triangle is" << endl;
+
+		for (size_t i = 0; i < pascal.size(); i++)
+		{
+			for (size_t j = 0; j < pascal.at(i).size(); j++)
+			{
+				cout << setw(6) << pascal.at(i).at(j);
+			}
+			cout << endl;
+		}
+		
 		break;
 	}
 	case 215:
