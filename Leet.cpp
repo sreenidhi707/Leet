@@ -908,6 +908,54 @@ public:
 	//	//vector< vector<int> > all_combinations = dfs_problem_39(candidates, 0, target);
 	//	return(all_combinations);
 	//}
+
+	/****************************************************************/
+	/****************************************************************/
+	int problem_62(int m, int n)
+	{
+		if (m == 1 && n == 1)
+		{
+			return 1;
+		}
+
+		//Create the 2D chess 
+		int** maze = new int*[m];
+		for (size_t row = 0; row < m; row++)
+		{
+			maze[row] = new int[n];
+		}
+
+		//Initialization
+		maze[0][0] = 0;
+		for (size_t row = 1; row < m; row++)
+		{
+			maze[row][0] = 1;
+		}
+		for (size_t col = 1; col < n; col++)
+		{
+			maze[0][col] = 1;
+		}
+
+		for (size_t row = 1; row < m; row++)
+		{
+			for (size_t col = 1; col < n; col++)
+			{
+				maze[row][col] = maze[row - 1][col] + maze[row][col - 1];
+			}
+		}
+
+		//Print
+		for (size_t row = 0; row < m; row++)
+		{
+			for (size_t col = 0; col < n; col++)
+			{
+				cout << setw(3) << maze[row][col];
+			}
+			cout << endl;
+		}
+		
+		return(maze[m - 1][n - 1]);
+	}
 	
 	/****************************************************************/
 	/****************************************************************/
@@ -1737,6 +1785,28 @@ int main()
 		int length_of_last_word = sol.problem_58(s);
 
 		cout << "Length of the last word is:" << length_of_last_word;
+
+		break;
+	}
+	case 62:
+	{
+		cout << endl << endl;
+		cout << "Leet code Problem 62: Unique Paths" << endl;
+		cout << "A robot is located at the top-left corner of a m x n grid (marked 'Start' in the diagram below)." << endl;
+		cout << "The robot can only move either down or right at any point in time. The robot is trying to reach the bottom-right corner of the grid (marked 'Finish' in the diagram below)." << endl;
+		cout << "How many possible unique paths are there?" << endl;
+
+		cout << "Link: https://leetcode.com/problems/unique-paths/" << endl;
+
+		int m, n;
+		cout << "Enter number of rows:";
+		cin >> m;
+		cout << "Enter number of cols:";
+		cin >> n;
+
+		int total_paths = sol.problem_62(m, n);
+
+		cout << "There are totally " << total_paths << " unique paths";
 
 		break;
 	}
