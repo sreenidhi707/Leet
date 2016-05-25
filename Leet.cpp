@@ -959,6 +959,48 @@ public:
 	
 	/****************************************************************/
 	/****************************************************************/
+
+	int problem_64(vector<vector<int> >& grid)
+	{
+		vector< vector<int> > cost_matrix;
+		int rows = grid.size();
+		int cols = grid.at(0).size();
+
+		for (size_t i = 0; i < rows; i++)
+		{
+			vector<int> col(cols);
+			cost_matrix.push_back(col);
+		}
+
+		//Populate the (0, 0)th entry
+		cost_matrix[0][0] = grid[0][0];
+
+		//Populate first row of cost matrix
+		for (size_t i = 1; i < cols; i++)
+		{
+			cost_matrix[0][i] = grid[0][i] + cost_matrix[0][i - 1];
+		}
+
+		//Populate first column of cost matrix
+		for (size_t i = 1; i < rows; i++)
+		{
+			cost_matrix[i][0] = grid[i][0] + cost_matrix[i - 1][0];
+		}
+
+		//Now populate the rest of the cost matrix
+		for (size_t i = 1; i < rows; i++)
+		{
+			for (size_t j = 1; j < cols; j++)
+			{
+				int cost_to_add = min(cost_matrix[i - 1][j], cost_matrix[i][j - 1]); //Minimum of top and left neighbors
+				cost_matrix[i][j] = cost_to_add + grid[i][j];
+			}
+		}
+		return cost_matrix[rows - 1][cols - 1];
+	}
+
+	/****************************************************************/
+	/****************************************************************/
 	int dfs_problem_70(int target, unordered_map<int, int>& cache)
 	{
 		//See if target has already been computed
@@ -1807,6 +1849,28 @@ int main()
 		int total_paths = sol.problem_62(m, n);
 
 		cout << "There are totally " << total_paths << " unique paths";
+
+		break;
+	}
+	case 64:
+	{
+		cout << endl << endl;
+		cout << "Leet code Problem 64: Minimum Path Sum" << endl;
+		cout << "Given a m x n grid filled with non-negative numbers, find a path from top left to bottom right which minimizes the sum of all numbers along its path." << endl;
+		cout << "Note: You can only move either down or right at any point in time." << endl;
+
+		cout << "Link: https://leetcode.com/problems/minimum-path-sum/" << endl;
+
+		vector<int> row1{ 1, 3, 1 };
+		vector<int> row2{ 1, 5, 1 };
+		vector<int> row3{ 4, 2, 1 };
+
+		vector< vector<int> > grid;
+		grid.push_back(row1);
+		grid.push_back(row2);
+		grid.push_back(row3);
+
+		int min_cost = sol.problem_64(grid);
 
 		break;
 	}
