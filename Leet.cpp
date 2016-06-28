@@ -1069,6 +1069,109 @@ public:
 	/****************************************************************/
 	/****************************************************************/
 
+	bool decodable(int num)
+	{
+		if (num >= 1 && num <= 26)
+		{
+			return true;
+		}
+		else 
+		{
+			return false;
+		}
+	}
+	
+	
+	void decode_ways(string s, int& count)
+	{
+		if (s.size() == 0)
+		{
+			count++;
+			return;
+		}
+
+		if (s[0] == '0')
+		{
+			return;
+		}
+		else if (s[0] == '1')
+		{
+			if (s.size() > 1)
+			{
+				string s_0 = s.substr(1, s.size() - 1);
+				decode_ways(s_0, count);
+
+				string s_1 = s.substr(2, s.size() - 2);
+				decode_ways(s_1, count);
+
+				return;
+			}
+			else
+			{
+				string s_0 = s.substr(1, s.size() - 1);
+				decode_ways(s_0, count);
+
+				return;
+			}
+		}
+		else if (s[0] == '2')
+		{
+			if (s.size() > 1)
+			{
+				if (s[1] >= '0' && s[1] <= '6')
+				{
+					string s_0 = s.substr(1, s.size() - 1);
+					decode_ways(s_0, count);
+
+					string s_1 = s.substr(2, s.size() - 2);
+					decode_ways(s_1, count);
+
+					return;
+
+				}
+				else
+				{
+					string s_0 = s.substr(1, s.size() - 1);
+					decode_ways(s_0, count);
+
+					return;
+				}
+			}
+			else
+			{
+				string s_0 = s.substr(1, s.size() - 1);
+				decode_ways(s_0, count);
+
+				return;
+			}
+		}
+		else
+		{
+			string s_0 = s.substr(1, s.size() - 1);
+			decode_ways(s_0, count);
+
+			return;
+		}
+
+
+	}
+
+	int problem_91(string s)
+	{
+		if (s.size() == 0 || s[0] == '0')
+		{
+			return 0;
+		}
+
+		int count = 0;
+		decode_ways(s, count);
+
+		return count;
+	}
+
+	/****************************************************************/
+	/****************************************************************/
+
 	bool problem_98(TreeNode* pRoot)
 	{
 		bool isBst = check_bst(pRoot, INT_MIN, INT_MAX);
@@ -1884,6 +1987,28 @@ int main()
 		cout << "Link: https://leetcode.com/problems/climbing-stairs/" << endl;
 
 		int count = sol.problem_70(3);
+		break;
+	}
+	case 91:
+	{
+		cout << endl << endl;
+		cout << "Leet code Problem 91: Decode Ways " << endl;
+		cout << "A message containing letters from A-Z is being encoded to numbers using the following mapping:" << endl;
+		cout << "'A' -> 1" << endl;
+		cout << "'B' -> 2" << endl;
+		cout << "'C' -> 3" << endl;
+		cout << "'D' -> 4" << endl;
+		cout << "Given an encoded message containing digits, determine the total number of ways to decode it." << endl;
+
+		cout << "Link: https://leetcode.com/problems/decode-ways/" << endl;
+
+		cout << "Enter a number:" << endl;
+		string s;
+		cin >> s;
+		int count = sol.problem_91(s);
+
+		cout << "Total decodable ways is :" << count << endl;
+		break;
 	}
 	case 98:
 	{
