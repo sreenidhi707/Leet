@@ -1069,19 +1069,6 @@ public:
 	/****************************************************************/
 	/****************************************************************/
 
-	bool decodable(int num)
-	{
-		if (num >= 1 && num <= 26)
-		{
-			return true;
-		}
-		else 
-		{
-			return false;
-		}
-	}
-	
-	
 	void decode_ways(string s, int& count)
 	{
 		if (s.size() == 0)
@@ -1156,7 +1143,7 @@ public:
 
 	}
 
-	int problem_91(string s)
+	int problem_91(string s) 
 	{
 		if (s.size() == 0 || s[0] == '0')
 		{

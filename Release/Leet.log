@@ -1,4 +1,5 @@
-﻿  Leet.cpp
+﻿  stdafx.cpp
+  Leet.cpp
 c:\users\sanand2\dropbox\myprojects\leet\LinkedList.h(81): warning C4018: '<': signed/unsigned mismatch
 Leet.cpp(106): warning C4018: '<=': signed/unsigned mismatch
 Leet.cpp(119): warning C4018: '<': signed/unsigned mismatch
@@ -21,13 +22,12 @@ Leet.cpp(979): warning C4018: '<': signed/unsigned mismatch
 Leet.cpp(985): warning C4018: '<': signed/unsigned mismatch
 Leet.cpp(991): warning C4018: '<': signed/unsigned mismatch
 Leet.cpp(993): warning C4018: '<': signed/unsigned mismatch
-Leet.cpp(1439): warning C4018: '<': signed/unsigned mismatch
-Leet.cpp(1487): warning C4018: '<': signed/unsigned mismatch
-Leet.cpp(1539): warning C4018: '<': signed/unsigned mismatch
-Leet.cpp(1868): warning C4018: '<': signed/unsigned mismatch
+Leet.cpp(1426): warning C4018: '<': signed/unsigned mismatch
+Leet.cpp(1474): warning C4018: '<': signed/unsigned mismatch
+Leet.cpp(1526): warning C4018: '<': signed/unsigned mismatch
+Leet.cpp(1855): warning C4018: '<': signed/unsigned mismatch
   Generating code
-  1 of 1478 functions ( 0.1%) were compiled, the rest were copied from previous compilation.
-    0 functions were new in current compilation
-    0 functions had inline decision re-evaluated but remain unchanged
+c:\users\sanand2\dropbox\myprojects\leet\leet.cpp(1234): warning C4715: 'Solution::problem_100': not all control paths return a value
+  All 1478 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
   Finished generating code
   Leet.vcxproj -> C:\Users\sanand2\Dropbox\MyProjects\Leet\Release\Leet.exe
