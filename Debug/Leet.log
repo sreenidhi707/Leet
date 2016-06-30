@@ -21,9 +21,9 @@ c:\users\sanand2\dropbox\myprojects\leet\leet.cpp(979): warning C4018: '<': sign
 c:\users\sanand2\dropbox\myprojects\leet\leet.cpp(985): warning C4018: '<': signed/unsigned mismatch
 c:\users\sanand2\dropbox\myprojects\leet\leet.cpp(991): warning C4018: '<': signed/unsigned mismatch
 c:\users\sanand2\dropbox\myprojects\leet\leet.cpp(993): warning C4018: '<': signed/unsigned mismatch
-c:\users\sanand2\dropbox\myprojects\leet\leet.cpp(1439): warning C4018: '<': signed/unsigned mismatch
-c:\users\sanand2\dropbox\myprojects\leet\leet.cpp(1487): warning C4018: '<': signed/unsigned mismatch
-c:\users\sanand2\dropbox\myprojects\leet\leet.cpp(1539): warning C4018: '<': signed/unsigned mismatch
-c:\users\sanand2\dropbox\myprojects\leet\leet.cpp(1868): warning C4018: '<': signed/unsigned mismatch
-c:\users\sanand2\dropbox\myprojects\leet\leet.cpp(1247): warning C4715: 'Solution::problem_100': not all control paths return a value
+c:\users\sanand2\dropbox\myprojects\leet\leet.cpp(1440): warning C4018: '<': signed/unsigned mismatch
+c:\users\sanand2\dropbox\myprojects\leet\leet.cpp(1488): warning C4018: '<': signed/unsigned mismatch
+c:\users\sanand2\dropbox\myprojects\leet\leet.cpp(1540): warning C4018: '<': signed/unsigned mismatch
+c:\users\sanand2\dropbox\myprojects\leet\leet.cpp(1869): warning C4018: '<': signed/unsigned mismatch
+c:\users\sanand2\dropbox\myprojects\leet\leet.cpp(1248): warning C4715: 'Solution::problem_100': not all control paths return a value
   Leet.vcxproj -> C:\Users\sanand2\Dropbox\MyProjects\Leet\Debug\Leet.exe

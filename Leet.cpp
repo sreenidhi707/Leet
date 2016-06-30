@@ -1068,12 +1068,18 @@ public:
 
 	/****************************************************************/
 	/****************************************************************/
-
+	unordered_map<string, int> prob_91_table;
 	void decode_ways(string s, int& count)
 	{
 		if (s.size() == 0)
 		{
 			count++;
+			return;
+		}
+
+		if (prob_91_table.count(s) != 0)
+		{
+			count += prob_91_table[s];
 			return;
 		}
 
@@ -1087,16 +1093,19 @@ public:
 			{
 				string s_0 = s.substr(1, s.size() - 1);
 				decode_ways(s_0, count);
+				if(s_0 != "" && prob_91_table.count(s_0) == 0) prob_91_table[s_0] = count;
 
 				string s_1 = s.substr(2, s.size() - 2);
 				decode_ways(s_1, count);
-
+				if (s_1 != "" && prob_91_table.count(s_1) == 0) prob_91_table[s_1] = count;
+				
 				return;
 			}
 			else
 			{
 				string s_0 = s.substr(1, s.size() - 1);
 				decode_ways(s_0, count);
+				if (s_0 != "" && prob_91_table.count(s_0) == 0) prob_91_table[s_0] = count;
 
 				return;
 			}
@@ -1109,9 +1118,11 @@ public:
 				{
 					string s_0 = s.substr(1, s.size() - 1);
 					decode_ways(s_0, count);
+					if (s_0 != "" && prob_91_table.count(s_0) == 0) prob_91_table[s_0] = count;
 
 					string s_1 = s.substr(2, s.size() - 2);
 					decode_ways(s_1, count);
+					if (s_1 != "" && prob_91_table.count(s_1) == 0) prob_91_table[s_1] = count;
 
 					return;
 
@@ -1120,6 +1131,7 @@ public:
 				{
 					string s_0 = s.substr(1, s.size() - 1);
 					decode_ways(s_0, count);
+					if (s_0 != "" && prob_91_table.count(s_0) == 0) prob_91_table[s_0] = count;
 
 					return;
 				}
@@ -1128,6 +1140,7 @@ public:
 			{
 				string s_0 = s.substr(1, s.size() - 1);
 				decode_ways(s_0, count);
+				if (s_0 != "" && prob_91_table.count(s_0) == 0) prob_91_table[s_0] = count;
 
 				return;
 			}
@@ -1136,6 +1149,7 @@ public:
 		{
 			string s_0 = s.substr(1, s.size() - 1);
 			decode_ways(s_0, count);
+			if (s_0 != "" && prob_91_table.count(s_0) == 0) prob_91_table[s_0] = count;
 
 			return;
 		}

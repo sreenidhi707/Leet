@@ -22,12 +22,12 @@ Leet.cpp(979): warning C4018: '<': signed/unsigned mismatch
 Leet.cpp(985): warning C4018: '<': signed/unsigned mismatch
 Leet.cpp(991): warning C4018: '<': signed/unsigned mismatch
 Leet.cpp(993): warning C4018: '<': signed/unsigned mismatch
-Leet.cpp(1426): warning C4018: '<': signed/unsigned mismatch
-Leet.cpp(1474): warning C4018: '<': signed/unsigned mismatch
-Leet.cpp(1526): warning C4018: '<': signed/unsigned mismatch
-Leet.cpp(1855): warning C4018: '<': signed/unsigned mismatch
+Leet.cpp(1439): warning C4018: '<': signed/unsigned mismatch
+Leet.cpp(1487): warning C4018: '<': signed/unsigned mismatch
+Leet.cpp(1539): warning C4018: '<': signed/unsigned mismatch
+Leet.cpp(1868): warning C4018: '<': signed/unsigned mismatch
   Generating code
-c:\users\sanand2\dropbox\myprojects\leet\leet.cpp(1234): warning C4715: 'Solution::problem_100': not all control paths return a value
-  All 1478 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+c:\users\sanand2\dropbox\myprojects\leet\leet.cpp(1247): warning C4715: 'Solution::problem_100': not all control paths return a value
+  All 1783 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
   Finished generating code
   Leet.vcxproj -> C:\Users\sanand2\Dropbox\MyProjects\Leet\Release\Leet.exe
