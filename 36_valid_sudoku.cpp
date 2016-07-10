@@ -1,3 +1,4 @@
+#include "stdafx.h"
 
 #include "36_valid_sudoku.h"
 
@@ -10,11 +11,11 @@ bool is_array_valid(vector<char> arr)
 	{
 		if (arr[i] != '.')
 		{
-			if (count[arr[i] - '0'])
+			if (count[arr[i] - '1'])
 			{
 				return false;
 			}
-			count[arr[i] - '0']++;
+			count[arr[i] - '1']++;
 		}
 	}
 	return true;
@@ -27,7 +28,7 @@ vector<char> get_column_vector(vector<vector<char>>& board, int col)
 	vector<char> temp;
 	for (size_t i = 0; i < board_size; i++)
 	{
-		temp.push_back(board[i][i*board_size + col]);
+		temp.push_back(board[i][col]);
 	}
 
 	return temp;
@@ -133,4 +134,21 @@ bool is_valid_soduku(vector<vector<char>>& board)
 	}
 
 	return true;
+}
+
+
+
+bool test_problem_36()
+{
+	vector<vector<char>> board{ { '.', '8', '7', '6', '5', '4', '3', '2', '1' },
+	                            { '2', '.', '.', '.', '.', '.', '.', '.', '.' },
+	                            { '3', '.', '.', '.', '.', '.', '.', '.', '.' },
+	                            { '4', '.', '.', '.', '.', '.', '.', '.', '.' },
+	                            { '5', '.', '.', '.', '.', '.', '.', '.', '.' },
+	                            { '6', '.', '.', '.', '.', '.', '.', '.', '.' },
+	                            { '7', '.', '.', '.', '.', '.', '.', '.', '.' },
+	                            { '8', '.', '.', '.', '.', '.', '.', '.', '.' },
+	                            { '9', '.', '.', '.', '.', '.', '.', '.', '.' } };
+
+	return(is_valid_soduku(board));
 }

@@ -1,22 +1,9 @@
 ﻿// Leet.cpp : Defines the entry point for the console application.
 //
-
 #include "stdafx.h"
 
-#include <vector>
-#include <string>
-#include <stack>
-#include <queue>
-#include <cassert>
-#include <algorithm> //sort
-#include <limits.h>
-#include <map>
-#include <unordered_map>
-#include <cctype>
-#include <iomanip> //setw, setfill
-
-
-#include "LinkedList.h"
+#include "common_includes.h"
+#include "36_valid_sudoku.h"
 
 struct ListNode 
 {
@@ -1871,6 +1858,18 @@ int main()
 			cout << data.at(i) << ", ";
 		}
 		cout << "New Length is " << newLength << endl;
+		break;
+	}
+	case 36:
+	{
+		cout << endl << endl;
+		cout << "Leet code Problem 36: Valid Sudoku" << endl;
+		cout << "Determine if a Sudoku is valid" << endl;
+		
+		cout << "Link: https://leetcode.com/problems/valid-sudoku/" << endl;
+
+		bool ans = test_problem_36();
+		
 		break;
 	}
 	case 38:
