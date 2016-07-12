@@ -1,6 +1,2 @@
-﻿  36_valid_sudoku.cpp
-c:\users\sanand2\dropbox\myprojects\leet\36_valid_sudoku.cpp(29): warning C4018: '<': signed/unsigned mismatch
-c:\users\sanand2\dropbox\myprojects\leet\36_valid_sudoku.cpp(106): warning C4018: '<': signed/unsigned mismatch
-c:\users\sanand2\dropbox\myprojects\leet\36_valid_sudoku.cpp(115): warning C4018: '<': signed/unsigned mismatch
-c:\users\sanand2\dropbox\myprojects\leet\36_valid_sudoku.cpp(126): warning C4018: '<': signed/unsigned mismatch
+﻿  125_valid_palindrome.cpp
   Leet.vcxproj -> C:\Users\sanand2\Dropbox\MyProjects\Leet\Debug\Leet.exe

@@ -14,4 +14,6 @@
 #include <cctype>
 #include <iomanip> //setw, setfill
 
+#include <ctype.h>
+
 using namespace std;

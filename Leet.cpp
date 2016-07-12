@@ -3,7 +3,7 @@
 #include "stdafx.h"
 
 #include "common_includes.h"
-#include "36_valid_sudoku.h"
+#include "common_driver.h"
 
 struct ListNode 
 {
@@ -2097,6 +2097,20 @@ int main()
 			cout << endl;
 		}
 		
+		break;
+	}
+	case 125:
+	{
+		cout << endl << endl;
+		cout << "Leet code Problem 125: Valid Palindrome" << endl;
+		cout << "Given a string, determine if it is a palindrome, considering only alphanumeric characters and ignoring cases." << endl;
+		cout << "For example," << endl;
+		cout << "\"A man, a plan, a canal : Panama\" is a palindrome." << endl;
+		cout << "\"race a car\" is not a palindrome." << endl;
+		cout << "Link: https://leetcode.com/problems/kth-largest-element-in-an-array/" << endl;
+
+		test_problem_125();
+
 		break;
 	}
 	case 215:
