@@ -147,11 +147,14 @@
   <ItemGroup>
     <ClInclude Include="common_driver.h" />
     <ClInclude Include="common_includes.h" />
+    <ClInclude Include="common_structs.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="125_valid_palindrome.cpp" />
+    <ClCompile Include="172_trailing_zeros_in_factorial.cpp" />
+    <ClCompile Include="234_palindrome_linked_list.cpp" />
     <ClCompile Include="36_valid_sudoku.cpp" />
     <ClCompile Include="Leet.cpp" />
     <ClCompile Include="stdafx.cpp">

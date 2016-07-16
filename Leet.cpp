@@ -5,21 +5,6 @@
 #include "common_includes.h"
 #include "common_driver.h"
 
-struct ListNode 
-{
-	int val;
-	ListNode *next;
-	ListNode(int x) : val(x), next(NULL) {}
-};
-
-
-struct TreeNode 
-{
-	int val;
-	TreeNode *left;
-	TreeNode *right;
-	TreeNode(int x) : val(x), left(NULL), right(NULL) {}
-};
 
 
 
@@ -2113,6 +2098,18 @@ int main()
 
 		break;
 	}
+	case 172:
+	{
+		cout << endl << endl;
+		cout << "Leet code Problem 172: Factorial Trailing Zeroes" << endl;
+		cout << "Given an integer n, return the number of trailing zeroes in n!." << endl;
+		cout << "Note: Your solution should be in logarithmic time complexity." << endl;
+		cout << "Link: https://leetcode.com/problems/factorial-trailing-zeroes/" << endl;
+
+		test_problem_172();
+
+		break;
+	}
 	case 215:
 	{
 		cout << endl << endl;
@@ -2127,6 +2124,20 @@ int main()
 		int kth_largest_num = sol.problem_215(data, 2);
 
 		cout << "Kth largest number is " << kth_largest_num << endl;
+		break;
+	}
+	case 234:
+	{
+		cout << endl << endl;
+		cout << "Leet code Problem 234: Palindrome Linked List" << endl;
+		cout << "Given a singly linked list, determine if it is a palindrome." << endl;
+		cout << "Follow up:" << endl;
+		cout << "Could you do it in O(n) time and O(1) space?" << endl;
+
+		cout << "Link: https://leetcode.com/problems/palindrome-linked-list/" << endl;
+
+		test_problem_234();
+
 		break;
 	}
 	case 283:

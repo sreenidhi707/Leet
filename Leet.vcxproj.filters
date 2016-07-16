@@ -30,6 +30,9 @@
     <ClInclude Include="common_driver.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="common_structs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -42,6 +45,12 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="125_valid_palindrome.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="234_palindrome_linked_list.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="172_trailing_zeros_in_factorial.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
