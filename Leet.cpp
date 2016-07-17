@@ -1918,6 +1918,20 @@ int main()
 
 		break;
 	}
+	case 61:
+	{
+		cout << endl << endl;
+		cout << "Leet code Problem 61: Rotate List" << endl;
+		cout << "Given a list, rotate the list to the right by k places, where k is non-negative." << endl;
+		cout << "For example:" << endl;
+		cout << "Given 1->2->3->4->5->NULL and k = 2," << endl;
+		cout << "return 4->5->1->2->3->NULL." << endl;
+
+		cout << "Link: https://leetcode.com/problems/rotate-list/" << endl;
+
+		test_problem_61();
+		break;
+	}
 	case 62:
 	{
 		cout << endl << endl;

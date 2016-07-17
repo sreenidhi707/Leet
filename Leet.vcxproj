@@ -158,6 +158,7 @@
     <ClCompile Include="189_rotate_array.cpp" />
     <ClCompile Include="234_palindrome_linked_list.cpp" />
     <ClCompile Include="36_valid_sudoku.cpp" />
+    <ClCompile Include="61_rotate_list.cpp" />
     <ClCompile Include="common_utils.cpp" />
     <ClCompile Include="Leet.cpp" />
     <ClCompile Include="stdafx.cpp">

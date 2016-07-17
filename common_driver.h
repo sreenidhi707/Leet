@@ -6,6 +6,7 @@
 #include "common_structs.h"
 
 bool test_problem_36();
+void test_problem_61();
 void test_problem_125();
 void test_problem_172();
 void test_problem_189();

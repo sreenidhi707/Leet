@@ -1,5 +1,4 @@
 #include "stdafx.h"
-
 #include "common_driver.h"
 
 bool is_array_valid(vector<char> arr)
