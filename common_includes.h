@@ -1,3 +1,5 @@
+#ifndef COMMON_INCLUDES_H
+#define COMMON_INCLUDES_H
 #pragma once
 #include "stdafx.h"
 
@@ -17,3 +19,5 @@
 #include <ctype.h>
 
 using namespace std;
+
+#endif

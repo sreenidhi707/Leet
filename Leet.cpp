@@ -2110,6 +2110,19 @@ int main()
 
 		break;
 	}
+	case 189:
+	{
+		cout << endl << endl;
+		cout << "Leet code Problem 189: Rotate an array of n elements to the right by k steps." << endl;
+		cout << "For example, with n = 7 and k = 3, the array [1,2,3,4,5,6,7] is rotated to [5,6,7,1,2,3,4]." << endl;
+		cout << "Note:" << endl;
+		cout << "Try to come up as many solutions as you can, there are at least 3 different ways to solve this problem." << endl;
+		cout << "Link: https://leetcode.com/problems/rotate-array/" << endl;
+
+		test_problem_189();
+
+		break;
+	}
 	case 215:
 	{
 		cout << endl << endl;
@@ -2210,7 +2223,7 @@ int main()
 		}
 		break;
 	}
-	
+	getchar();
 
 	return 0;
 }

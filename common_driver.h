@@ -1,3 +1,5 @@
+#ifndef COMMON_DRIVER_H
+#define COMMON_DRIVER_H
 #pragma once
 
 #include "common_includes.h"
@@ -6,4 +8,7 @@
 bool test_problem_36();
 void test_problem_125();
 void test_problem_172();
+void test_problem_189();
 void test_problem_234();
+
+#endif

@@ -33,6 +33,9 @@
     <ClInclude Include="common_structs.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="common_utils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -51,6 +54,12 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="172_trailing_zeros_in_factorial.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="189_rotate_array.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="common_utils.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
