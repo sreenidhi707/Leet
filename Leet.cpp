@@ -1819,6 +1819,17 @@ int main()
 		}
 		break;
 	}
+	case 23:
+	{
+		cout << endl << endl;
+		cout << "Leet code Problem 23: Merge k Sorted Lists" << endl;
+		cout << "Merge k sorted linked lists and return it as one sorted list. Analyze and describe its complexity." << endl;
+
+		cout << "Link: https://leetcode.com/problems/merge-k-sorted-lists/" << endl;
+
+		test_problem_23();
+		break;
+	}
 	case 26:
 	{
 		cout << endl << endl;
@@ -2109,6 +2120,20 @@ int main()
 		cout << "Link: https://leetcode.com/problems/kth-largest-element-in-an-array/" << endl;
 
 		test_problem_125();
+
+		break;
+	}
+	case 153:
+	{
+		cout << endl << endl;
+		cout << "Leet code Problem 153: Find Minimum in Rotated Sorted Array" << endl;
+		cout << "Suppose a sorted array is rotated at some pivot unknown to you beforehand." << endl;
+		cout << "(i.e., 0 1 2 4 5 6 7 might become 4 5 6 7 0 1 2)." << endl;
+		cout << "Find the minimum element." << endl;
+		cout << "You may assume no duplicate exists in the array." << endl;
+		cout << "Link: https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/" << endl;
+
+		test_problem_153();
 
 		break;
 	}

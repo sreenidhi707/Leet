@@ -65,5 +65,11 @@
     <ClCompile Include="61_rotate_list.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="153_minimum_in_sortd_rotated_array.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="23_merge_k_sorted_lists.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

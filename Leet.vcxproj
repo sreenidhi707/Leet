@@ -154,9 +154,11 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="125_valid_palindrome.cpp" />
+    <ClCompile Include="153_minimum_in_sortd_rotated_array.cpp" />
     <ClCompile Include="172_trailing_zeros_in_factorial.cpp" />
     <ClCompile Include="189_rotate_array.cpp" />
     <ClCompile Include="234_palindrome_linked_list.cpp" />
+    <ClCompile Include="23_merge_k_sorted_lists.cpp" />
     <ClCompile Include="36_valid_sudoku.cpp" />
     <ClCompile Include="61_rotate_list.cpp" />
     <ClCompile Include="common_utils.cpp" />

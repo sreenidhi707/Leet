@@ -23,6 +23,18 @@ vector<int> get_sorted_array(int n)
 	return temp;
 }
 
+vector<int> get_sorted_array(int start, int end)
+{
+	vector<int> temp;
+
+	for (size_t i = start; i <= end; i++)
+	{
+		temp.push_back(i);
+	}
+
+	return temp;
+}
+
 vector<int> get_random_array(int n)
 {
 	vector<int> temp;
@@ -153,6 +165,11 @@ ListNode* get_node_from_end(ListNode* head, int n, int length)
 ListNode* get_sorted_ll(int n)
 {
 	return(convert_array_to_ll(get_sorted_array(n)));
+}
+
+ListNode* get_sorted_ll(int start, int end)
+{
+	return(convert_array_to_ll(get_sorted_array(start, end)));
 }
 
 ListNode* get_random_ll(int n)
