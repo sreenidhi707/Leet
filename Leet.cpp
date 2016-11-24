@@ -1987,6 +1987,19 @@ int main()
 
 		break;
 	}
+	case 66:
+	{
+		cout << endl << endl;
+		cout << "Leet code Problem 66: Plus One" << endl;
+		cout << "Given a non-negative number represented as an array of digits, plus one to the number." << endl;
+		cout << "The digits are stored such that the most significant digit is at the head of the list." << endl;
+
+		cout << "Link: https://leetcode.com/problems/plus-one/" << endl;
+
+		test_problem_66();
+
+		break;
+	}
 	case 70:
 	{
 		cout << endl << endl;
@@ -2162,6 +2175,19 @@ int main()
 
 		break;
 	}
+	case 200:
+	{
+		cout << endl << endl;
+		cout << "Leet code Problem 200: Number of Islands." << endl;
+		cout << "Given a 2d grid map of '1's (land) and '0's (water), count the number of islands. An island is surrounded by water and is formed by " << endl;
+		cout << "connecting adjacent lands horizontally or vertically. You may assume all four edges of the grid are all surrounded by water." << endl;
+		
+		cout << "Link: https://leetcode.com/problems/number-of-islands/" << endl;
+
+		test_problem_200();
+
+		break;
+	}
 	case 215:
 	{
 		cout << endl << endl;
@@ -2241,6 +2267,18 @@ int main()
 
 		s = sol.problem_345(s);
 		cout << "Vowel reversed string is " << s;
+		break;
+	}
+	case 387:
+	{
+		cout << endl << endl;
+		cout << "Leet code Problem 387: First Unique Character in a String" << endl;
+		cout << "Given a string, find the first non-repeating character in it and return it's index. If it doesn't exist, return -1." << endl;
+
+		cout << "Link: https://leetcode.com/problems/first-unique-character-in-a-string/" << endl;
+
+		test_problem_387();
+
 		break;
 	}
 

@@ -71,5 +71,14 @@
     <ClCompile Include="23_merge_k_sorted_lists.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="66_plus_one.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="200_number_of_islands.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="387_first_unique_character_in_a_string.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

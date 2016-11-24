@@ -1,17 +1,6 @@
 #include "stdafx.h"
 #include "common_driver.h"
-
-bool is_alpha_numeric(char c)
-{
-	if (c >= 'a' && c <= 'z' || c >= 'A' && c <= 'Z' || c >= '0' && c <= '9')
-	{
-		return true;
-	}
-	else
-	{
-		return false;
-	}
-}
+#include "common_utils.h"
 
 bool is_palindrome(string s)
 {
@@ -25,13 +14,13 @@ bool is_palindrome(string s)
 
 	while (start < end)
 	{
-		if (!is_alpha_numeric(s[start]))
+		if (!is_char_alpha_numeric(s[start]))
 		{ 
 			start++;
 			continue;
 		}
 
-		if (!is_alpha_numeric(s[end]))
+		if (!is_char_alpha_numeric(s[end]))
 		{
 			end--;
 			continue;

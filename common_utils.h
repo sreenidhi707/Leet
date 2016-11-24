@@ -5,6 +5,9 @@
 #include "common_includes.h"
 #include "common_structs.h"
 
+//Boolean utility functions
+bool is_char_alpha_numeric(char c);
+
 //Arrays
 vector<int> get_sorted_array(int n);
 vector<int> get_sorted_array(int start, int end);
