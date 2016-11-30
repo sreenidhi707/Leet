@@ -145,6 +145,7 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\Utilities\utilities.h" />
     <ClInclude Include="common_driver.h" />
     <ClInclude Include="common_includes.h" />
     <ClInclude Include="common_structs.h" />
@@ -153,7 +154,9 @@
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\Utilities\utilities.cpp" />
     <ClCompile Include="125_valid_palindrome.cpp" />
+    <ClCompile Include="150_evaluate_reverse_polish_notation.cpp" />
     <ClCompile Include="153_minimum_in_sortd_rotated_array.cpp" />
     <ClCompile Include="172_trailing_zeros_in_factorial.cpp" />
     <ClCompile Include="189_rotate_array.cpp" />

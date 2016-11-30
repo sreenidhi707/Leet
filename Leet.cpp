@@ -2136,6 +2136,18 @@ int main()
 
 		break;
 	}
+	case 150:
+	{
+		cout << endl << endl;
+		cout << "Leet code Problem 150: Evaluate Reverse Polish Notation" << endl;
+		cout << "Evaluate the value of an arithmetic expression in Reverse Polish Notation." << endl;
+		cout << "Valid operators are +, -, *, /. Each operand may be an integer or another expression." << endl;
+		cout << "Link: https://leetcode.com/problems/evaluate-reverse-polish-notation/" << endl;
+
+		test_problem_150();
+
+		break;
+	}
 	case 153:
 	{
 		cout << endl << endl;
