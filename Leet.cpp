@@ -2245,6 +2245,17 @@ int main()
 		sol.problem_283(data);
 		break;
 	}
+	case 307:
+	{
+		cout << endl << endl;
+		cout << "Leet code Problem 307: Range Sum Query - Mutable" << endl;
+		cout << "Given an integer array nums, find the sum of the elements between indices i and j (i ≤ j), inclusive." << endl;
+
+		cout << "Link: https://leetcode.com/problems/range-sum-query-mutable/" << endl;
+
+		test_problem_307();
+		break;
+	}
 	case 344:
 	{
 		cout << endl << endl;
@@ -2290,6 +2301,28 @@ int main()
 		cout << "Link: https://leetcode.com/problems/first-unique-character-in-a-string/" << endl;
 
 		test_problem_387();
+
+		break;
+	}
+	case 468:
+	{
+		cout << endl << endl;
+		cout << "Leet code Problem 468: Validate IP Address" << endl;
+
+		cout << "Link: https://leetcode.com/problems/first-unique-character-in-a-string/" << endl;
+
+		test_problem_468();
+
+		break;
+	}
+	case 475:
+	{
+		cout << endl << endl;
+		cout << "Leet code Problem 475: Heaters" << endl;
+		
+		cout << "Link: https://leetcode.com/problems/first-unique-character-in-a-string/" << endl;
+
+		test_problem_475();
 
 		break;
 	}
