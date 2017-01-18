@@ -163,6 +163,7 @@
     <ClCompile Include="200_number_of_islands.cpp" />
     <ClCompile Include="234_palindrome_linked_list.cpp" />
     <ClCompile Include="23_merge_k_sorted_lists.cpp" />
+    <ClCompile Include="242_valid_anagram.cpp" />
     <ClCompile Include="307_range_sum_query_mutable.cpp" />
     <ClCompile Include="36_valid_sudoku.cpp" />
     <ClCompile Include="387_first_unique_character_in_a_string.cpp" />

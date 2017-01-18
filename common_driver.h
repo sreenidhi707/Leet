@@ -17,6 +17,7 @@ void test_problem_172();
 void test_problem_189();
 void test_problem_200();
 void test_problem_234();
+void test_problem_242();
 void test_problem_307();
 void test_problem_387();
 void test_problem_438();

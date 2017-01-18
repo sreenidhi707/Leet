@@ -1,2 +1,3 @@
-﻿  438_find_all_anagrams_in_a_string.cpp
+﻿  242_valid_anagram.cpp
+c:\users\sanand2\dropbox\myprojects\leet\242_valid_anagram.cpp(27): warning C4267: 'initializing': conversion from 'size_t' to 'char', possible loss of data
   Leet.vcxproj -> C:\Users\sanand2\Dropbox\MyProjects\Leet\Debug\Leet.exe

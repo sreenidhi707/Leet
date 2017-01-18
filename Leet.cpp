@@ -2242,6 +2242,18 @@ int main()
 
 		break;
 	}
+	case 242:
+	{
+		cout << endl << endl;
+		cout << "242: Valid Anagram" << endl;
+		cout << "Given two strings s and t, write a function to determine if t is an anagram of s." << endl;
+
+		cout << "Link: https://leetcode.com/problems/valid-anagram/" << endl;
+
+		test_problem_242();
+
+		break;
+	}
 	case 283:
 	{
 		cout << endl << endl;

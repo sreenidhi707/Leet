@@ -104,5 +104,8 @@
     <ClCompile Include="438_find_all_anagrams_in_a_string.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="242_valid_anagram.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
