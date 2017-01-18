@@ -166,6 +166,8 @@
     <ClCompile Include="307_range_sum_query_mutable.cpp" />
     <ClCompile Include="36_valid_sudoku.cpp" />
     <ClCompile Include="387_first_unique_character_in_a_string.cpp" />
+    <ClCompile Include="3_longest_substring_without_repeating_characters.cpp" />
+    <ClCompile Include="438_find_all_anagrams_in_a_string.cpp" />
     <ClCompile Include="468_validate_IP_address.cpp" />
     <ClCompile Include="475_heaters.cpp" />
     <ClCompile Include="61_rotate_list.cpp" />

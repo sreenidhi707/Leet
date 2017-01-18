@@ -1609,6 +1609,18 @@ int main()
 
 	switch (problem_id)
 	{
+	case 3:
+	{
+		cout << endl << endl;
+		cout << "Leet code Problem 3: Longest Substring Without Repeating Characters" << endl;
+		cout << "Given a string, find the length of the longest substring without repeating characters." << endl;
+
+		cout << "Link: https://leetcode.com/problems/longest-substring-without-repeating-characters/" << endl;
+
+		test_problem_3();
+
+		break;
+	}
 	case 6:
 	{
 		cout << endl << endl;
@@ -2301,6 +2313,18 @@ int main()
 		cout << "Link: https://leetcode.com/problems/first-unique-character-in-a-string/" << endl;
 
 		test_problem_387();
+
+		break;
+	}
+	case 438:
+	{
+		cout << endl << endl;
+		cout << "Leet code Problem 438: Find All Anagrams in a String" << endl;
+		cout << "Given a string s and a non-empty string p, find all the start indices of p's anagrams in s." << endl;
+
+		cout << "Link: https://leetcode.com/problems/find-all-anagrams-in-a-string/" << endl;
+
+		test_problem_438();
 
 		break;
 	}
