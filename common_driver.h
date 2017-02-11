@@ -21,6 +21,7 @@ void test_problem_242();
 void test_problem_307();
 void test_problem_387();
 void test_problem_438();
+void test_problem_461();
 void test_problem_468();
 void test_problem_475();
 

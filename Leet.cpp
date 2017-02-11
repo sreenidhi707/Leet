@@ -2340,6 +2340,19 @@ int main()
 
 		break;
 	}
+	case 461:
+	{
+		cout << endl << endl;
+		cout << "Leet code Problem 461: Hamming Distance" << endl;
+		cout << "The Hamming distance between two integers is the number of positions at which the corresponding bits are different." << endl;
+		cout << "Given two integers x and y, calculate the Hamming distance." << endl;
+
+		cout << "Link: https://leetcode.com/problems/hamming-distance/" << endl;
+
+		test_problem_461();
+
+		break;
+	}
 	case 468:
 	{
 		cout << endl << endl;
