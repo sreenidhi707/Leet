@@ -2024,6 +2024,16 @@ int main()
 		int count = sol.problem_70(3);
 		break;
 	}
+	case 76:
+	{
+		cout << endl << endl;
+		cout << "Leet code Problem 76: Minimum Window Substring" << endl;
+
+		cout << "Link: https://leetcode.com/problems/minimum-window-substring/#/description" << endl;
+
+		test_problem_76();
+		break;
+	}
 	case 91:
 	{
 		cout << endl << endl;
@@ -2372,6 +2382,17 @@ int main()
 		cout << "Link: https://leetcode.com/problems/first-unique-character-in-a-string/" << endl;
 
 		test_problem_475();
+
+		break;
+	}
+	case 566:
+	{
+		cout << endl << endl;
+		cout << "Leet code Problem 566: Reshape the Matrix" << endl;
+
+		cout << "Link: https://leetcode.com/problems/reshape-the-matrix/#/description" << endl;
+
+		test_problem_566();
 
 		break;
 	}

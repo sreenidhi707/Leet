@@ -110,5 +110,11 @@
     <ClCompile Include="461_hamming_distance.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="76_minimum_window_substring.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="566_reshape_the_matrix.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

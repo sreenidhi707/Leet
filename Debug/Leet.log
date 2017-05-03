@@ -1,1 +1,4 @@
-﻿  461_hamming_distance.cpp
+﻿  566_reshape_the_matrix.cpp
+c:\users\sanand2\dropbox\myprojects\leet\566_reshape_the_matrix.cpp(22): warning C4018: '<': signed/unsigned mismatch
+c:\users\sanand2\dropbox\myprojects\leet\566_reshape_the_matrix.cpp(25): warning C4018: '<': signed/unsigned mismatch
+  Leet.vcxproj -> C:\Users\sanand2\Dropbox\MyProjects\Leet\Debug\Leet.exe
