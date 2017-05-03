@@ -25,6 +25,7 @@ void test_problem_438();
 void test_problem_461();
 void test_problem_468();
 void test_problem_475();
+void test_problem_561();
 void test_problem_566();
 
 #endif

@@ -172,6 +172,7 @@
     <ClCompile Include="461_hamming_distance.cpp" />
     <ClCompile Include="468_validate_IP_address.cpp" />
     <ClCompile Include="475_heaters.cpp" />
+    <ClCompile Include="561_array_partition_1.cpp" />
     <ClCompile Include="566_reshape_the_matrix.cpp" />
     <ClCompile Include="61_rotate_list.cpp" />
     <ClCompile Include="66_plus_one.cpp" />

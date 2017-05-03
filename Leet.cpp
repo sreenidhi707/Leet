@@ -2385,6 +2385,17 @@ int main()
 
 		break;
 	}
+	case 561:
+	{
+		cout << endl << endl;
+		cout << "Leet code Problem 561. Array Partition I" << endl;
+
+		cout << "Link: https://leetcode.com/problems/array-partition-i/#/description" << endl;
+
+		test_problem_561();
+
+		break;
+	}
 	case 566:
 	{
 		cout << endl << endl;
