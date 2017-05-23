@@ -119,5 +119,8 @@
     <ClCompile Include="561_array_partition_1.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="30_substring_with_concatenation_of_all_words.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

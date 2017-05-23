@@ -7,6 +7,7 @@
 
 void test_problem_3();
 void test_problem_23();
+void test_problem_30();
 bool test_problem_36();
 void test_problem_76();
 void test_problem_61();

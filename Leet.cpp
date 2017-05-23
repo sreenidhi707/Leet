@@ -1868,6 +1868,17 @@ int main()
 		cout << "New Length is " << newLength << endl;
 		break;
 	}
+	case 30:
+	{
+		cout << endl << endl;
+		cout << "30. Substring with Concatenation of All Words" << endl;
+
+		cout << "Link: https://leetcode.com/problems/substring-with-concatenation-of-all-words/#/description" << endl;
+
+		test_problem_30();
+
+		break;
+	}
 	case 36:
 	{
 		cout << endl << endl;

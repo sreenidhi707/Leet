@@ -1,3 +1,4 @@
-﻿  561_array_partition_1.cpp
-c:\users\sanand2\dropbox\myprojects\leet\561_array_partition_1.cpp(11): warning C4018: '<': signed/unsigned mismatch
+﻿  76_minimum_window_substring.cpp
+c:\users\sanand2\dropbox\myprojects\leet\76_minimum_window_substring.cpp(44): warning C4018: '<': signed/unsigned mismatch
+c:\users\sanand2\dropbox\myprojects\leet\76_minimum_window_substring.cpp(95): warning C4018: '<': signed/unsigned mismatch
   Leet.vcxproj -> C:\Users\sanand2\Dropbox\MyProjects\Leet\Debug\Leet.exe
