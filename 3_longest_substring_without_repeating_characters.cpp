@@ -39,9 +39,43 @@ uint32_t longest_substring(string s)
 	return longest_string_length;
 }
 
+uint32_t longest_substring2(string s)
+{
+	if (s.empty())
+	{
+		return 0;
+	}
+	int start = 0, end = 0;
+	int max_length = INT32_MIN;
+	int length = 0;
+	vector<int> map(256, 0);
+
+	while (end < s.size())
+	{
+		map[s[end]]++;
+		length++;
+		if (map[s[end]] == 2)
+		{
+			while (map[s[start]] != 2)
+			{
+				map[s[start++]]--;
+			}
+			map[s[start++]]--;
+			length = end - start + 1;
+		}
+		else
+		{
+			max_length = (length > max_length) ? length : max_length;
+		}
+		end++;
+	}
+
+	return max_length;
+}
+
 void test_problem_3()
 {
-	string test = "dvdf";
-	uint32_t res = longest_substring(test);
+	string test = "pwwkew";
+	uint32_t res = longest_substring2(test);
 	cout << res;
 }
