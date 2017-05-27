@@ -175,6 +175,7 @@
     <ClCompile Include="475_heaters.cpp" />
     <ClCompile Include="561_array_partition_1.cpp" />
     <ClCompile Include="566_reshape_the_matrix.cpp" />
+    <ClCompile Include="5_longest_palindromic_substring.cpp" />
     <ClCompile Include="61_rotate_list.cpp" />
     <ClCompile Include="66_plus_one.cpp" />
     <ClCompile Include="76_minimum_window_substring.cpp" />

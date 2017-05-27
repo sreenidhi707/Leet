@@ -122,5 +122,8 @@
     <ClCompile Include="30_substring_with_concatenation_of_all_words.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="5_longest_palindromic_substring.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

@@ -5,125 +5,129 @@
 const int MAX_NUM_ROWS = 6;
 const int MAX_NUM_COLS = 6;
 
-int grid[MAX_NUM_ROWS][MAX_NUM_COLS] =
+//vector< vector<int> > test
+//{
+//	{1,1,1,0,0,0},
+//	{1,1,1,0,0,0},
+//	{1,0,0,1,0,0},
+//	{0,0,0,0,0,0},
+//	{1,1,1,0,0,0},
+//	{1,1,1,0,0,0},
+//};
+
+//vector< vector<int> > test
+//{
+//	{1,1,1,1,0},
+//	{1,1,0,1,0},
+//	{1,1,0,0,0},
+//	{0,0,0,0,0},
+//};
+
+vector< vector<int> > test
 {
-	{1,1,1,0,0,0},
-	{1,1,1,0,0,0},
-	{1,0,0,1,0,0},
-	{0,0,0,0,0,0},
-	{1,1,1,0,0,0},
-	{1,1,1,0,0,0},
+	{ 1 },
 };
 
-struct cell
+
+struct point
 {
-	int row, col;
-	bool val;
-	bool visited;
+	int x, y, value, visited;
+public:
+	point(int a, int b, int val) { x = a, y = b; value = val; visited = false; }
 };
 
-cell cells[MAX_NUM_ROWS][MAX_NUM_COLS];
-
-void construct_cell_grid()
+vector< vector<point> > convert(vector< vector<int> > grid)
 {
-	for (size_t i = 0; i < MAX_NUM_ROWS; i++)
+	vector< vector<point> > grid_points;
+	for (int row = 0; row < grid.size(); row++)
 	{
-		for (size_t j = 0; j < MAX_NUM_COLS; j++)
+		vector<point> row_points;
+		for (size_t col = 0; col < grid[row].size(); col++)
 		{
-			cells[i][j].row = i;
-			cells[i][j].col = j;
-			
-			cells[i][j].val = grid[i][j];
-			cells[i][j].visited = false;
+			point p(col, row, grid[row][col]);
+			row_points.push_back(p);
 		}
+		grid_points.push_back(row_points);
 	}
+
+	return grid_points;
 }
 
-void construct_cell_from_vector()
-{
-	for (size_t i = 0; i < MAX_NUM_ROWS; i++)
+int number_of_islands(vector< vector<point> > grid)
+{	
+	if (grid.empty())
 	{
-		for (size_t j = 0; j < MAX_NUM_COLS; j++)
-		{
-			cells[i][j].row = i;
-			cells[i][j].col = j;
-
-			cells[i][j].val = grid[i][j];
-			cells[i][j].visited = false;
-		}
+		return 0;
 	}
-}
-
-//vector<vector<char>>& convert_grid_to_vector()
-//{
-//
-//}
-//
-//int numIslands(vector<vector<char>>& grid) 
-//{
-//
-//}
-
-void dfs_walk(int row, int col)
-{
 	
-	std::stack<cell> unvisited_cells;
+	queue<point> unvisited_points;
+	int islands = 0;
+	int max_row_id = grid.size();
+	int max_col_id = grid[0].size();
 
-	unvisited_cells.push(cells[row][col]);
-
-	while (unvisited_cells.size() != 0)
+	for (size_t y = 0; y < max_row_id; y++)
 	{
-		if (unvisited_cells.top().visited == false)
+		for (size_t x= 0; x < max_col_id; x++)
 		{
-			//Check TOP neighbor
-			if (row > 0 && cells[row - 1][col].val == 1 && cells[row - 1][col].visited == false)
+			if (grid[y][x].visited == false && grid[y][x].value)
 			{
-				unvisited_cells.push(cells[row - 1][col]);
+				unvisited_points.push(grid[y][x]);
+				islands++;
+				while (!unvisited_points.empty())
+				{
+					point top = unvisited_points.front();
+					grid[top.y][top.x].visited = true;
+
+					cout << "Processing point " << top.x << "," << top.y << endl;
+
+					//Top neighbour
+					if (top.y > 0 && 
+						grid[top.y - 1][top.x].visited == false &&
+						grid[top.y - 1][top.x].value == 1) //point NOT in first row
+					{
+						grid[top.y - 1][top.x].visited = true;
+						unvisited_points.push(grid[top.y - 1][top.x]);
+					}
+
+					//Right neighbour
+					if ((top.x < max_col_id - 1) && 
+						(grid[top.y][top.x + 1].visited == false) &&
+						(grid[top.y][top.x + 1].value == 1)) //point NOT in last column
+					{
+						grid[top.y][top.x + 1].visited = true;
+						unvisited_points.push(grid[top.y][top.x + 1]);
+					}
+
+					//Bottom neighbour
+					if ((top.y < max_row_id - 1) && 
+						(grid[top.y + 1][top.x].visited == false) &&
+						(grid[top.y + 1][top.x].value == 1)) //point NOT in last row
+					{
+						grid[top.y + 1][top.x].visited = true;
+						unvisited_points.push(grid[top.y + 1][top.x]);
+					}
+
+					//Left neighbour
+					if ((top.x > 0) && 
+						(grid[top.y][top.x - 1].visited == false) &&
+						(grid[top.y][top.x - 1].value == 1)) //point NOT in first column
+					{
+						grid[top.y][top.x - 1].visited = true;
+						unvisited_points.push(grid[top.y][top.x - 1]);
+					}
+
+					unvisited_points.pop();
+				}
 			}
-
-			//Check RIGHT neighbor
-			if (col < MAX_NUM_COLS - 1 && cells[row + 1][col + 1].val == 1 && cells[row][col + 1].visited == false)
-			{
-				unvisited_cells.push(cells[row][col + 1]);
-			}
-
-			//Check BOTTOM neighbor
-			if (row < MAX_NUM_ROWS - 1 && cells[row + 1][col].val == 1 && cells[row + 1][col].visited == false)
-			{
-				unvisited_cells.push(cells[row + 1][col]);
-			}
-
-			//Check LEFT neighbor
-			if (col > 0 && cells[row][col - 1].val == 1 && cells[row][col - 1].visited == false)
-			{
-				unvisited_cells.push(cells[row][col - 1]);
-			}
-
-			//Mark current cell as visited
-			unvisited_cells.top().visited = true;
-
-			//Remove current cell from stack
-			unvisited_cells.pop();
 		}
 	}
+
+	return islands;
 }
 
 void test_problem_200()
 {
-	construct_cell_grid();
-
-	int num_islands = 0;
-
-	for (size_t row = 0; row < MAX_NUM_ROWS; row++)
-	{
-		for (size_t col = 0; col < MAX_NUM_COLS; col++)
-		{
-			if (cells[row][col].val == 1 && cells[row][col].visited == false)
-			{
-				dfs_walk(row, col);
-				num_islands++;
-			}
-		}
-	}
-
+	vector< vector<point> > grid = convert(test);
+	int islands = number_of_islands(grid);
+	cout << "Number of Islands is:" << islands << endl;
 }

@@ -1621,6 +1621,16 @@ int main()
 
 		break;
 	}
+	case 5:
+	{
+		cout << endl << endl;
+		cout << "Leet code Problem 5: Longest Palindromic Substring" << endl;
+		cout << "Link: https://leetcode.com/problems/longest-palindromic-substring/#/description" << endl;
+
+		test_problem_5();
+
+		break;
+	}
 	case 6:
 	{
 		cout << endl << endl;

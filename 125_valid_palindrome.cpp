@@ -2,7 +2,7 @@
 #include "common_driver.h"
 #include "common_utils.h"
 
-bool is_palindrome(string s)
+static bool is_palindrome(string s)
 {
 	if (s.size() == 0)
 	{
