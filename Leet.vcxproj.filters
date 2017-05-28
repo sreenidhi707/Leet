@@ -125,5 +125,8 @@
     <ClCompile Include="5_longest_palindromic_substring.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="130_surrounded_regions.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

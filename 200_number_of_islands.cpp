@@ -2,9 +2,6 @@
 #include "common_driver.h"
 #include "common_utils.h"
 
-const int MAX_NUM_ROWS = 6;
-const int MAX_NUM_COLS = 6;
-
 //vector< vector<int> > test
 //{
 //	{1,1,1,0,0,0},
