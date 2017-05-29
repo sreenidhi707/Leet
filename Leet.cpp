@@ -1889,6 +1889,17 @@ int main()
 
 		break;
 	}
+	case 35:
+	{
+		cout << endl << endl;
+		cout << "Leet code Problem 35. Search Insert Position" << endl;
+
+		cout << "Link: https://leetcode.com/problems/search-insert-position/#/description" << endl;
+
+		test_problem_35();
+
+		break;
+	}
 	case 36:
 	{
 		cout << endl << endl;
@@ -1897,7 +1908,7 @@ int main()
 		
 		cout << "Link: https://leetcode.com/problems/valid-sudoku/" << endl;
 
-		bool ans = test_problem_36();
+		test_problem_36();
 		
 		break;
 	}

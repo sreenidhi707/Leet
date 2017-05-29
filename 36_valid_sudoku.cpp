@@ -137,7 +137,7 @@ bool is_valid_soduku(vector<vector<char>>& board)
 
 
 
-bool test_problem_36()
+void test_problem_36()
 {
 	vector<vector<char>> board{ { '.', '8', '7', '6', '5', '4', '3', '2', '1' },
 	                            { '2', '.', '.', '.', '.', '.', '.', '.', '.' },
@@ -149,5 +149,5 @@ bool test_problem_36()
 	                            { '8', '.', '.', '.', '.', '.', '.', '.', '.' },
 	                            { '9', '.', '.', '.', '.', '.', '.', '.', '.' } };
 
-	return(is_valid_soduku(board));
+	is_valid_soduku(board);
 }

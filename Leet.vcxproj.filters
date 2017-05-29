@@ -128,5 +128,8 @@
     <ClCompile Include="130_surrounded_regions.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="35_search_insert_position.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
