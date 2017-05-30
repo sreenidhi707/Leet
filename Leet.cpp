@@ -1889,6 +1889,17 @@ int main()
 
 		break;
 	}
+	case 34:
+	{
+		cout << endl << endl;
+		cout << "Leet code Problem 34. Search for a Range" << endl;
+
+		cout << "Link: https://leetcode.com/problems/search-for-a-range/#/description" << endl;
+
+		test_problem_34();
+
+		break;
+	}
 	case 35:
 	{
 		cout << endl << endl;

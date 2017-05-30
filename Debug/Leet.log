@@ -1,2 +1,5 @@
-﻿  35_search_insert_position.cpp
-c:\users\sanand2\dropbox\myprojects\leet\35_search_insert_position.cpp(44): warning C4715: 'search_insert': not all control paths return a value
+﻿  34_search_for_a_range.cpp
+c:\users\sanand2\dropbox\myprojects\leet\34_search_for_a_range.cpp(97): warning C4018: '<': signed/unsigned mismatch
+c:\users\sanand2\dropbox\myprojects\leet\34_search_for_a_range.cpp(83): warning C4715: 'search_for_start': not all control paths return a value
+c:\users\sanand2\dropbox\myprojects\leet\34_search_for_a_range.cpp(56): warning C4715: 'search_for_end': not all control paths return a value
+  Leet.vcxproj -> C:\Users\sanand2\Dropbox\MyProjects\Leet\Debug\Leet.exe

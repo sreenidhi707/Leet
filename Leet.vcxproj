@@ -167,6 +167,7 @@
     <ClCompile Include="242_valid_anagram.cpp" />
     <ClCompile Include="307_range_sum_query_mutable.cpp" />
     <ClCompile Include="30_substring_with_concatenation_of_all_words.cpp" />
+    <ClCompile Include="34_search_for_a_range.cpp" />
     <ClCompile Include="35_search_insert_position.cpp" />
     <ClCompile Include="36_valid_sudoku.cpp" />
     <ClCompile Include="387_first_unique_character_in_a_string.cpp" />

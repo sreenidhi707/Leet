@@ -131,5 +131,8 @@
     <ClCompile Include="35_search_insert_position.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="34_search_for_a_range.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
