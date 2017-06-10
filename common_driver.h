@@ -11,6 +11,8 @@ void test_problem_23();
 void test_problem_30();
 void test_problem_34();
 void test_problem_35();
+void test_problem_46();
+void test_problem_47();
 void test_problem_36();
 void test_problem_76();
 void test_problem_61();

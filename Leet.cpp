@@ -1911,6 +1911,28 @@ int main()
 
 		break;
 	}
+	case 46:
+	{
+		cout << endl << endl;
+		cout << "Leet code Problem 46. Permutations" << endl;
+
+		cout << "Link: https://leetcode.com/problems/permutations/#/description" << endl;
+
+		test_problem_46();
+
+		break;
+	}
+	case 47:
+	{
+		cout << endl << endl;
+		cout << "Leet code Problem 47. Permutations 2" << endl;
+
+		cout << "Link: https://leetcode.com/problems/permutations-ii/#/description" << endl;
+
+		test_problem_47();
+
+		break;
+	}
 	case 36:
 	{
 		cout << endl << endl;

@@ -134,5 +134,11 @@
     <ClCompile Include="34_search_for_a_range.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="46_permutations.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="47_permutations_2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
