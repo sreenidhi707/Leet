@@ -140,5 +140,8 @@
     <ClCompile Include="47_permutations_2.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="78_subsets.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

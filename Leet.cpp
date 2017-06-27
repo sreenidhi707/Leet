@@ -1911,28 +1911,6 @@ int main()
 
 		break;
 	}
-	case 46:
-	{
-		cout << endl << endl;
-		cout << "Leet code Problem 46. Permutations" << endl;
-
-		cout << "Link: https://leetcode.com/problems/permutations/#/description" << endl;
-
-		test_problem_46();
-
-		break;
-	}
-	case 47:
-	{
-		cout << endl << endl;
-		cout << "Leet code Problem 47. Permutations 2" << endl;
-
-		cout << "Link: https://leetcode.com/problems/permutations-ii/#/description" << endl;
-
-		test_problem_47();
-
-		break;
-	}
 	case 36:
 	{
 		cout << endl << endl;
@@ -1979,6 +1957,28 @@ int main()
 		candidates.push_back(7);
 
 		//vector < vector<int> > all_combinations = sol.problem_39(candidates, 7);
+
+		break;
+	}
+	case 46:
+	{
+		cout << endl << endl;
+		cout << "Leet code Problem 46. Permutations" << endl;
+
+		cout << "Link: https://leetcode.com/problems/permutations/#/description" << endl;
+
+		test_problem_46();
+
+		break;
+	}
+	case 47:
+	{
+		cout << endl << endl;
+		cout << "Leet code Problem 47. Permutations 2" << endl;
+
+		cout << "Link: https://leetcode.com/problems/permutations-ii/#/description" << endl;
+
+		test_problem_47();
 
 		break;
 	}
@@ -2097,6 +2097,16 @@ int main()
 		cout << "Link: https://leetcode.com/problems/minimum-window-substring/#/description" << endl;
 
 		test_problem_76();
+		break;
+	}
+	case 78:
+	{
+		cout << endl << endl;
+		cout << "Leet code Problem 78: Subsets" << endl;
+
+		cout << "Link: https://leetcode.com/problems/subsets/#/description" << endl;
+
+		test_problem_78();
 		break;
 	}
 	case 91:
