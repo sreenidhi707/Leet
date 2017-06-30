@@ -1,5 +1,2 @@
-﻿  78_subsets.cpp
-c:\users\sanand2\dropbox\myprojects\leet\78_subsets.cpp(12): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
-c:\users\sanand2\dropbox\myprojects\leet\78_subsets.cpp(15): warning C4018: '<': signed/unsigned mismatch
-c:\users\sanand2\dropbox\myprojects\leet\78_subsets.cpp(17): warning C4018: '<': signed/unsigned mismatch
+﻿  90_subsets-2.cpp
   Leet.vcxproj -> C:\Users\sanand2\Dropbox\MyProjects\Leet\Debug\Leet.exe

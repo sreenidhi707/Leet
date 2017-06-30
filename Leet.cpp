@@ -2109,6 +2109,16 @@ int main()
 		test_problem_78();
 		break;
 	}
+	case 90:
+	{
+		cout << endl << endl;
+		cout << "Leet code Problem 90: Subsets ||" << endl;
+
+		cout << "Link: https://leetcode.com/problems/subsets-ii/#/description" << endl;
+
+		test_problem_90();
+		break;
+	}
 	case 91:
 	{
 		cout << endl << endl;
