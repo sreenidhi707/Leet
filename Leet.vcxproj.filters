@@ -146,5 +146,8 @@
     <ClCompile Include="90_subsets-2.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="88_merge_sorted_array.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

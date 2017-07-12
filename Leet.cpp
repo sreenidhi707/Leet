@@ -2109,6 +2109,16 @@ int main()
 		test_problem_78();
 		break;
 	}
+	case 88:
+	{
+		cout << endl << endl;
+		cout << "Leet code Problem 88: Merge Sorted Arrays" << endl;
+
+		cout << "Link: https://leetcode.com/problems/merge-sorted-array/#/description" << endl;
+
+		test_problem_88();
+		break;
+	}
 	case 90:
 	{
 		cout << endl << endl;
