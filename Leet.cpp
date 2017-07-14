@@ -1816,7 +1816,7 @@ int main()
 		ListNode* pnode7 = new ListNode(7);
 		pnode6->next = pnode7;*/
 
-		ListNode* res = sol.problem_19(phead, 2);
+		ListNode* res = sol.problem_21(phead, pnode1);
 		break;
 	}
 	case 22:
