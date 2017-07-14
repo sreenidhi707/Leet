@@ -2357,6 +2357,16 @@ int main()
 
 		break;
 	}
+	case 237:
+	{
+		cout << endl << endl;
+		cout << "Leet code Problem 237. Delete Node in a Linked List" << endl;
+		cout << "Link: https://leetcode.com/problems/delete-node-in-a-linked-list/#/description" << endl;
+
+		test_problem_237();
+
+		break;
+	}
 	case 242:
 	{
 		cout << endl << endl;

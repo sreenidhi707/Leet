@@ -1,2 +1,109 @@
-﻿  23_merge_k_sorted_lists.cpp
+﻿  Leet.cpp
+c:\users\sanand2\dropbox\myprojects\leet\leet.cpp(78): warning C4018: '<=': signed/unsigned mismatch
+c:\users\sanand2\dropbox\myprojects\leet\leet.cpp(91): warning C4018: '<': signed/unsigned mismatch
+c:\users\sanand2\dropbox\myprojects\leet\leet.cpp(223): warning C4018: '>=': signed/unsigned mismatch
+c:\users\sanand2\dropbox\myprojects\leet\leet.cpp(391): warning C4018: '<': signed/unsigned mismatch
+c:\users\sanand2\dropbox\myprojects\leet\leet.cpp(639): warning C4018: '<=': signed/unsigned mismatch
+c:\users\sanand2\dropbox\myprojects\leet\leet.cpp(646): warning C4018: '<=': signed/unsigned mismatch
+c:\users\sanand2\dropbox\myprojects\leet\leet.cpp(700): warning C4018: '<': signed/unsigned mismatch
+c:\users\sanand2\dropbox\myprojects\leet\leet.cpp(722): warning C4018: '<': signed/unsigned mismatch
+c:\users\sanand2\dropbox\myprojects\leet\leet.cpp(782): warning C4018: '<=': signed/unsigned mismatch
+c:\users\sanand2\dropbox\myprojects\leet\leet.cpp(895): warning C4018: '<': signed/unsigned mismatch
+c:\users\sanand2\dropbox\myprojects\leet\leet.cpp(902): warning C4018: '<': signed/unsigned mismatch
+c:\users\sanand2\dropbox\myprojects\leet\leet.cpp(906): warning C4018: '<': signed/unsigned mismatch
+c:\users\sanand2\dropbox\myprojects\leet\leet.cpp(911): warning C4018: '<': signed/unsigned mismatch
+c:\users\sanand2\dropbox\myprojects\leet\leet.cpp(913): warning C4018: '<': signed/unsigned mismatch
+c:\users\sanand2\dropbox\myprojects\leet\leet.cpp(920): warning C4018: '<': signed/unsigned mismatch
+c:\users\sanand2\dropbox\myprojects\leet\leet.cpp(922): warning C4018: '<': signed/unsigned mismatch
+c:\users\sanand2\dropbox\myprojects\leet\leet.cpp(941): warning C4018: '<': signed/unsigned mismatch
+c:\users\sanand2\dropbox\myprojects\leet\leet.cpp(951): warning C4018: '<': signed/unsigned mismatch
+c:\users\sanand2\dropbox\myprojects\leet\leet.cpp(957): warning C4018: '<': signed/unsigned mismatch
+c:\users\sanand2\dropbox\myprojects\leet\leet.cpp(963): warning C4018: '<': signed/unsigned mismatch
+c:\users\sanand2\dropbox\myprojects\leet\leet.cpp(965): warning C4018: '<': signed/unsigned mismatch
+c:\users\sanand2\dropbox\myprojects\leet\leet.cpp(1412): warning C4018: '<': signed/unsigned mismatch
+c:\users\sanand2\dropbox\myprojects\leet\leet.cpp(1460): warning C4018: '<': signed/unsigned mismatch
+c:\users\sanand2\dropbox\myprojects\leet\leet.cpp(1512): warning C4018: '<': signed/unsigned mismatch
+c:\users\sanand2\dropbox\myprojects\leet\leet.cpp(1874): warning C4018: '<': signed/unsigned mismatch
+c:\users\sanand2\dropbox\myprojects\leet\leet.cpp(2401): warning C4566: character represented by universal-character-name '\u2264' cannot be represented in the current code page (1252)
+  23_merge_k_sorted_lists.cpp
+  237_delete_node_in_a_linked_list.cpp
+  Generating Code...
+c:\users\sanand2\dropbox\myprojects\leet\leet.cpp(1220): warning C4715: 'Solution::problem_100': not all control paths return a value
+  Compiling...
+  common_utils.cpp
+c:\users\sanand2\dropbox\myprojects\leet\common_utils.cpp(36): warning C4018: '<=': signed/unsigned mismatch
+c:\users\sanand2\dropbox\myprojects\leet\common_utils.cpp(48): warning C4018: '<=': signed/unsigned mismatch
+c:\users\sanand2\dropbox\myprojects\leet\common_utils.cpp(60): warning C4018: '<=': signed/unsigned mismatch
+c:\users\sanand2\dropbox\myprojects\leet\common_utils.cpp(66): warning C4244: 'initializing': conversion from 'std::chrono::system_clock::rep' to 'unsigned int', possible loss of data
+  90_subsets-2.cpp
+  88_merge_sorted_array.cpp
+c:\users\sanand2\dropbox\myprojects\leet\88_merge_sorted_array.cpp(12): warning C4018: '<': signed/unsigned mismatch
+c:\users\sanand2\dropbox\myprojects\leet\88_merge_sorted_array.cpp(26): warning C4018: '<': signed/unsigned mismatch
+c:\users\sanand2\dropbox\myprojects\leet\88_merge_sorted_array.cpp(32): warning C4018: '<': signed/unsigned mismatch
+  78_subsets.cpp
+c:\users\sanand2\dropbox\myprojects\leet\78_subsets.cpp(12): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+c:\users\sanand2\dropbox\myprojects\leet\78_subsets.cpp(15): warning C4018: '<': signed/unsigned mismatch
+c:\users\sanand2\dropbox\myprojects\leet\78_subsets.cpp(17): warning C4018: '<': signed/unsigned mismatch
+  76_minimum_window_substring.cpp
+c:\users\sanand2\dropbox\myprojects\leet\76_minimum_window_substring.cpp(44): warning C4018: '<': signed/unsigned mismatch
+c:\users\sanand2\dropbox\myprojects\leet\76_minimum_window_substring.cpp(95): warning C4018: '<': signed/unsigned mismatch
+  66_plus_one.cpp
+  61_rotate_list.cpp
+  5_longest_palindromic_substring.cpp
+c:\users\sanand2\dropbox\myprojects\leet\5_longest_palindromic_substring.cpp(33): warning C4018: '<': signed/unsigned mismatch
+  566_reshape_the_matrix.cpp
+c:\users\sanand2\dropbox\myprojects\leet\566_reshape_the_matrix.cpp(22): warning C4018: '<': signed/unsigned mismatch
+c:\users\sanand2\dropbox\myprojects\leet\566_reshape_the_matrix.cpp(25): warning C4018: '<': signed/unsigned mismatch
+  561_array_partition_1.cpp
+c:\users\sanand2\dropbox\myprojects\leet\561_array_partition_1.cpp(11): warning C4018: '<': signed/unsigned mismatch
+  47_permutations_2.cpp
+c:\users\sanand2\dropbox\myprojects\leet\47_permutations_2.cpp(23): warning C4018: '>=': signed/unsigned mismatch
+c:\users\sanand2\dropbox\myprojects\leet\47_permutations_2.cpp(34): warning C4018: '<': signed/unsigned mismatch
+c:\users\sanand2\dropbox\myprojects\leet\47_permutations_2.cpp(51): warning C4018: '<': signed/unsigned mismatch
+  475_heaters.cpp
+  46_permutations.cpp
+c:\users\sanand2\dropbox\myprojects\leet\46_permutations.cpp(47): warning C4018: '>=': signed/unsigned mismatch
+c:\users\sanand2\dropbox\myprojects\leet\46_permutations.cpp(54): warning C4018: '<': signed/unsigned mismatch
+  468_validate_IP_address.cpp
+  461_hamming_distance.cpp
+  438_find_all_anagrams_in_a_string.cpp
+  3_longest_substring_without_repeating_characters.cpp
+c:\users\sanand2\dropbox\myprojects\leet\3_longest_substring_without_repeating_characters.cpp(53): warning C4018: '<': signed/unsigned mismatch
+  387_first_unique_character_in_a_string.cpp
+  36_valid_sudoku.cpp
+c:\users\sanand2\dropbox\myprojects\leet\36_valid_sudoku.cpp(28): warning C4018: '<': signed/unsigned mismatch
+c:\users\sanand2\dropbox\myprojects\leet\36_valid_sudoku.cpp(105): warning C4018: '<': signed/unsigned mismatch
+c:\users\sanand2\dropbox\myprojects\leet\36_valid_sudoku.cpp(114): warning C4018: '<': signed/unsigned mismatch
+c:\users\sanand2\dropbox\myprojects\leet\36_valid_sudoku.cpp(125): warning C4018: '<': signed/unsigned mismatch
+  35_search_insert_position.cpp
+  Generating Code...
+c:\users\sanand2\dropbox\myprojects\leet\35_search_insert_position.cpp(44): warning C4715: 'search_insert': not all control paths return a value
+c:\users\sanand2\dropbox\myprojects\leet\47_permutations_2.cpp(128): warning C4717: 'solution3': recursive on all control paths, function will cause runtime stack overflow
+c:\users\sanand2\dropbox\myprojects\leet\5_longest_palindromic_substring.cpp(50): warning C4715: 'longest_palindrome_substring': not all control paths return a value
+  Compiling...
+  34_search_for_a_range.cpp
+c:\users\sanand2\dropbox\myprojects\leet\34_search_for_a_range.cpp(97): warning C4018: '<': signed/unsigned mismatch
+  30_substring_with_concatenation_of_all_words.cpp
+c:\users\sanand2\dropbox\myprojects\leet\30_substring_with_concatenation_of_all_words.cpp(12): warning C4018: '<': signed/unsigned mismatch
+c:\users\sanand2\dropbox\myprojects\leet\30_substring_with_concatenation_of_all_words.cpp(40): warning C4018: '<': signed/unsigned mismatch
+  307_range_sum_query_mutable.cpp
+c:\users\sanand2\dropbox\myprojects\leet\307_range_sum_query_mutable.cpp(31): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+c:\users\sanand2\dropbox\myprojects\leet\307_range_sum_query_mutable.cpp(32): warning C4018: '<': signed/unsigned mismatch
+  242_valid_anagram.cpp
+c:\users\sanand2\dropbox\myprojects\leet\242_valid_anagram.cpp(27): warning C4267: 'initializing': conversion from 'size_t' to 'char', possible loss of data
+  234_palindrome_linked_list.cpp
+  200_number_of_islands.cpp
+c:\users\sanand2\dropbox\myprojects\leet\200_number_of_islands.cpp(39): warning C4018: '<': signed/unsigned mismatch
+c:\users\sanand2\dropbox\myprojects\leet\200_number_of_islands.cpp(65): warning C4018: '<': signed/unsigned mismatch
+c:\users\sanand2\dropbox\myprojects\leet\200_number_of_islands.cpp(67): warning C4018: '<': signed/unsigned mismatch
+  189_rotate_array.cpp
+  172_trailing_zeros_in_factorial.cpp
+  153_minimum_in_sortd_rotated_array.cpp
+  150_evaluate_reverse_polish_notation.cpp
+  130_surrounded_regions.cpp
+  125_valid_palindrome.cpp
+  Generating Code...
+c:\users\sanand2\dropbox\myprojects\leet\234_palindrome_linked_list.cpp(14): warning C4715: 'is_palindrome': not all control paths return a value
+c:\users\sanand2\dropbox\myprojects\leet\34_search_for_a_range.cpp(83): warning C4715: 'search_for_start': not all control paths return a value
+c:\users\sanand2\dropbox\myprojects\leet\34_search_for_a_range.cpp(56): warning C4715: 'search_for_end': not all control paths return a value
   Leet.vcxproj -> C:\Users\sanand2\Dropbox\MyProjects\Leet\Debug\Leet.exe
