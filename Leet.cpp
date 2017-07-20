@@ -1702,6 +1702,17 @@ int main()
 		}
 		break;
 	}
+	case 11:
+	{
+		cout << endl << endl;
+		cout << "Leet code Problem 11. Container With Most Water" << endl;
+
+		cout << "Link: https://leetcode.com/problems/container-with-most-water/#/description" << endl;
+
+		test_problem_11();
+
+		break;
+	}
 	case 17:
 	{
 		cout << endl << endl;
@@ -2040,6 +2051,16 @@ int main()
 
 		cout << "There are totally " << total_paths << " unique paths";
 
+		break;
+	}
+	case 63:
+	{
+		cout << endl << endl;
+		cout << "Leet code Problem 63. Unique Paths II" << endl;
+
+		cout << "Link: https://leetcode.com/problems/unique-paths-ii/#/description" << endl;
+
+		test_problem_63();
 		break;
 	}
 	case 64:

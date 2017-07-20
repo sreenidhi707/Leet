@@ -7,6 +7,7 @@
 
 void test_problem_3();
 void test_problem_5();
+void test_problem_11();
 void test_problem_23();
 void test_problem_30();
 void test_problem_34();
@@ -15,6 +16,7 @@ void test_problem_46();
 void test_problem_47();
 void test_problem_36();
 void test_problem_61();
+void test_problem_63();
 void test_problem_66();
 void test_problem_76();
 void test_problem_78();
