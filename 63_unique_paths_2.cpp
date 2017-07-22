@@ -53,7 +53,7 @@ int unique_paths(vector<vector<int>>& obstacleGrid)
 		}
 	}
 
-	return paths[W - 1][H - 1];
+	return paths[H - 1][W - 1];
 }
 
 void test_problem_63()

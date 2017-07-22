@@ -4,21 +4,7 @@
 
 using namespace std;
 
-static bool is_palindrome(string s)
-{
-	int start = 0;
-	int end = s.size() - 1;
-	while (start <= end)
-	{
-		if (s[start] != s[end])
-		{
-			return false;
-		}
-		start++;
-		end--;
-	}
-	return true;
-}
+
 
 string longest_palindrome_substring(string s)
 {
@@ -27,32 +13,38 @@ string longest_palindrome_substring(string s)
 		return "";
 	}
 
-	int start = 0, end = 0;
-	int max_length = 0, length = 0;
-
-	while (end < s.size())
-	{
-		string substring = s.substr(start, end - start + 1);
-		if (is_palindrome(substring))
-		{
-			length++;
-		}
-		else
-		{
-			start = end;
-			length = 0;
-		}
-		
-		max_length = (length > max_length) ? length : max_length;
-		end++;
-	}
+	int num_centers = 2*s.size() - 1;
 	
+	int max_length = 0;
+	int max_length_sid = 0, max_length_eid = 0;
+	for (int i = 0; i < num_centers; i++)
+	{
+		int curr_max_length = 0;
+		int l, r;
+		l = (i - 1) / 2;
+		r = (i + 2) / 2;
+
+		while (l >= 0 && r < s.size() && s[l] == s[r])
+		{
+			curr_max_length = r - l + 1;
+			if (curr_max_length > max_length)
+			{
+				max_length = curr_max_length;
+				max_length_sid = l;
+				max_length_eid = r;
+			}
+			l -= 1;
+			r += 1;
+			
+		}
+	}
+	return s.substr(max_length_sid, max_length_eid - max_length_sid + 1);
 }
 
 
 void test_problem_5()
 {
-	string test = "babad";
+	string test = "banana";
 	string res = longest_palindrome_substring(test);
 	cout << res;
 }
