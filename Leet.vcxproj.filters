@@ -158,5 +158,8 @@
     <ClCompile Include="63_unique_paths_2.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="112_path_sum_2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

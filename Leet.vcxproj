@@ -155,6 +155,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\Utilities\utilities.cpp" />
+    <ClCompile Include="112_path_sum_2.cpp" />
     <ClCompile Include="11_container_with_most_water.cpp" />
     <ClCompile Include="125_valid_palindrome.cpp" />
     <ClCompile Include="130_surrounded_regions.cpp" />

@@ -22,6 +22,7 @@ void test_problem_76();
 void test_problem_78();
 void test_problem_88();
 void test_problem_90();
+void test_problem_112();
 void test_problem_125();
 void test_problem_130();
 void test_problem_150();

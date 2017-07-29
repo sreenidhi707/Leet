@@ -2234,6 +2234,16 @@ int main()
 
 		break;
 	}
+	case 112:
+	{
+		cout << endl << endl;
+		cout << "Leet code Problem 112:Path Sum II" << endl;
+		cout << "Link: https://leetcode.com/problems/path-sum-ii/tabs/description/" << endl;
+
+		test_problem_112();
+
+		break;
+	}
 	case 118:
 	{
 		cout << endl << endl;
