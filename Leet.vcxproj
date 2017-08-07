@@ -161,6 +161,7 @@
     <ClCompile Include="130_surrounded_regions.cpp" />
     <ClCompile Include="150_evaluate_reverse_polish_notation.cpp" />
     <ClCompile Include="153_minimum_in_sortd_rotated_array.cpp" />
+    <ClCompile Include="160_intersection_of_two_linked_lists.cpp" />
     <ClCompile Include="172_trailing_zeros_in_factorial.cpp" />
     <ClCompile Include="189_rotate_array.cpp" />
     <ClCompile Include="200_number_of_islands.cpp" />

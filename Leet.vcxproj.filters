@@ -161,5 +161,8 @@
     <ClCompile Include="112_path_sum_2.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="160_intersection_of_two_linked_lists.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

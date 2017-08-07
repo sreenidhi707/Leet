@@ -2320,6 +2320,16 @@ int main()
 
 		break;
 	}
+	case 160:
+	{
+		cout << endl << endl;
+		cout << "Leet code Problem 160. Intersection of Two Linked Lists" << endl;
+		cout << "Link: https://leetcode.com/problems/intersection-of-two-linked-lists/description/" << endl;
+
+		test_problem_160();
+
+		break;
+	}
 	case 172:
 	{
 		cout << endl << endl;
