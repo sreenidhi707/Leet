@@ -164,5 +164,8 @@
     <ClCompile Include="160_intersection_of_two_linked_lists.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="109_convert_sorted_list_to_binary_search_tree.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
